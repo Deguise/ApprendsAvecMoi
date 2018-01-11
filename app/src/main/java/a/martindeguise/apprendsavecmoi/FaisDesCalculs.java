@@ -1,12 +1,17 @@
 package a.martindeguise.apprendsavecmoi;
 
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import java.lang.Math;
 
-/**
- * Created by martin on 11/01/2018.
- */
+public class FaisDesCalculs extends AppCompatActivity {
 
-public class FaisDesCalculs {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.layout_compte);
+        int resultat = genererAddition();
+    }
 
     private int generateurNombreAleatoire(int n){
         return (int) (Math.random() * n); //Pour un entier entre 0 et n-1
