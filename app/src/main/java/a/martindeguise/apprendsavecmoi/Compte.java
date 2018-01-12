@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Compte extends AppCompatActivity {
 
@@ -13,7 +14,7 @@ public class Compte extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_compte);
 
-        final Button faisDesCalculsButton = (Button) findViewById(R.id.button2);
+        final ImageButton faisDesCalculsButton = (ImageButton) findViewById(R.id.imageButton);
         faisDesCalculsButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
