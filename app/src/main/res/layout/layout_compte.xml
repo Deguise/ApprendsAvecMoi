@@ -24,8 +24,7 @@
             android:layout_alignParentTop="true"
             android:fontFamily="@font/rochester"
             android:text="Compte avec moi !"
-            android:textSize="30sp"
-            android:typeface="r" />
+            android:textSize="30sp" />
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -36,7 +35,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="60dp"
             android:background="@null"
-            app:srcCompat="@drawable/bouton_compteObjets" />
+            app:srcCompat="@drawable/bouton_compte_objets" />
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -47,7 +46,7 @@
             android:layout_marginStart="450dp"
             android:layout_marginTop="60dp"
             android:background="@null"
-            app:srcCompat="@drawable/bouton_faisDesCalculs" />
+            app:srcCompat="@drawable/bouton_fais_des_calculs" />
 
         <TextView
             android:id="@+id/textView2"
