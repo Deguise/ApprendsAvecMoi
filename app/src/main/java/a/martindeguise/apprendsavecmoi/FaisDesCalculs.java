@@ -1,48 +1,38 @@
 package a.martindeguise.apprendsavecmoi;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
-
-import java.lang.Math;
+import android.view.View;
+import android.widget.ImageButton;
 
 public class FaisDesCalculs extends AppCompatActivity {
-
-    private int nb1, nb2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_fais_des_calculs);
 
-        // Affichage de l'addition
-        TextView textView4 = (TextView)findViewById(R.id.textView4);
-        textView4.setText(genererAddition());
+        // Création bouton addtion
+        final ImageButton additionButton = findViewById(R.id.imageButton3);
+        additionButton.setOnClickListener(new View.OnClickListener() {
 
-        // Affichage du resultat
-        // TextView textView5 = (TextView)findViewById(R.id.textView5);
-        // textView5.setText(String.valueOf(resultat()));
-    }
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FaisDesCalculs.this, Addition.class);
+                startActivity(intent);
+            }
+        });
 
-    private int generateurNombreAleatoire(int n){
-        return (int) (Math.random() * n); //Pour un entier entre 0 et n-1
-    }
+        // Création bouton addtion a trou
+        final ImageButton additionTrouButton = findViewById(R.id.imageButton4);
+        additionTrouButton.setOnClickListener(new View.OnClickListener() {
 
-    public String genererAddition(){
-        nb1 =  generateurNombreAleatoire(10);
-        nb2 =  generateurNombreAleatoire(10);
-        return nb1 + "+" + nb2 +"= ?";
-    }
-
-    public int getNb1(){
-        return nb1;
-    }
-
-    public int getNb2(){
-        return nb2;
-    }
-
-    public int resultat(){
-        return nb1 + nb2;
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FaisDesCalculs.this, Addtion_trou.class);
+                startActivity(intent);
+            }
+        });
     }
 }

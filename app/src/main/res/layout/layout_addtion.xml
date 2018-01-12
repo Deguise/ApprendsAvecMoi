@@ -5,20 +5,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/imageButton3"
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        app:srcCompat="@drawable/bouton_additions"
-        android:background="@null"/>
+        android:fontFamily="monospace"
+        android:text="Problème d'affichage"
+        android:textSize="40sp" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
+    <EditText
+        android:id="@+id/edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        app:srcCompat="@drawable/bouton_addition_trou"
-        android:background="@null"/>
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Vérifier !"
+        android:textSize="30sp" />
 
 </LinearLayout>
