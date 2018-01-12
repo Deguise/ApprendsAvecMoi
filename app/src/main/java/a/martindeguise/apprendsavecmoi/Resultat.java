@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class Resultat extends AppCompatActivity{
 
+    final String EXTRA_RESULTATUSER = "resultatUser";
     final String EXTRA_RESULTAT = "resultat";
 
     @Override
@@ -21,9 +22,25 @@ public class Resultat extends AppCompatActivity{
         Intent intent = getIntent();
 
         // Affichage du resultat
-        TextView textView6 = findViewById(R.id.textView6);
+        TextView textView9 = findViewById(R.id.textView9); // Vrai resultat
+        TextView textView7 = findViewById(R.id.textView7); // Resultat donnée par l'utilisateur
+        TextView textView8 = findViewById(R.id.textView8); // Dire a l'utilisateur si son resultat est bon ou pas
+
         if (intent != null) {
-            textView6.setText(intent.getStringExtra(EXTRA_RESULTAT));
+            textView9.setText(intent.getStringExtra(EXTRA_RESULTAT));
+            textView7.setText(intent.getStringExtra(EXTRA_RESULTATUSER));
+
+            // Conserver uniquement les lettres et les chiffres
+            //EXTRA_RESULTAT.replaceAll("[\\s\\p{Punct}]","");
+            //EXTRA_RESULTATUSER.replaceAll("[\\s\\p{Punct}]","");
+
+            //Affichage du message pour savoir si le resultat donnée par l'utilisateur est bon ou pas
+            if (EXTRA_RESULTAT.equals(EXTRA_RESULTATUSER)){
+                textView8.setText("Bon");
+            }
+            else{
+                textView8.setText("Pas bon");
+            }
         }
     }
 }

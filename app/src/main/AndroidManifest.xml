@@ -28,6 +28,9 @@
         <activity
             android:name=".Resultat"
             android:label="@string/app_name"/>
+        <activity
+            android:name=".CompteObjet"
+            android:label="@string/app_name"/>
     </application>
 
 </manifest>

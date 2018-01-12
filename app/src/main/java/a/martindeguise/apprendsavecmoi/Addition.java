@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.lang.Math;
@@ -15,6 +14,7 @@ public class Addition extends AppCompatActivity {
 
     private int nb1, nb2;
 
+    final String EXTRA_RESULTATUSER = "resultatUser";
     final String EXTRA_RESULTAT = "resultat";
 
     @Override
@@ -34,7 +34,8 @@ public class Addition extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Addition.this, Resultat.class);
-                intent.putExtra(EXTRA_RESULTAT, resultat.getText().toString());
+                intent.putExtra(EXTRA_RESULTATUSER, resultat.getText().toString());
+                intent.putExtra(EXTRA_RESULTAT, Integer.toString(resultat()));
                 startActivity(intent);
             }
         });
