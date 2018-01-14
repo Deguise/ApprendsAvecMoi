@@ -12,7 +12,7 @@ import java.lang.Math;
 
 public class Addition extends AppCompatActivity {
 
-    private int nb1, nb2; 
+    private int nb1, nb2;
 
     final String EXTRA_RESULTATUSER = "resultatUser";
     final String EXTRA_RESULTAT = "resultat";
