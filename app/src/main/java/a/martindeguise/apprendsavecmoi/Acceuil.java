@@ -28,7 +28,7 @@ public class Acceuil extends AppCompatActivity {
             }
         });
 
-        // Création bouton ecris avec moi
+        // Création bouton ecris avec moi 
         final ImageButton compteObjetsButton= findViewById(R.id.imageButton2);
         compteObjetsButton.setOnClickListener(new View.OnClickListener() {
 
