@@ -22,7 +22,7 @@
             android:layout_height="50dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:fontFamily="@font/rochester"
+            android:fontFamily="rochester"
             android:text="Compte avec moi !"
             android:textSize="30sp" />
 
