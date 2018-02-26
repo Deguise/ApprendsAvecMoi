@@ -20,11 +20,11 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_above="@+id/imageButton2"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="11dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
             android:fontFamily="@font/rochester"
-            android:text="Compte avec moi !"
+            android:text="Ecris avec moi!"
             android:textSize="30sp" />
 
         <ImageButton
@@ -55,9 +55,9 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/imageButton2"
             android:layout_below="@+id/imageButton2"
-            android:layout_marginTop="11dp"
+            android:layout_marginTop="9dp"
             android:fontFamily="@font/rochester"
-            android:text="Compte les objets !"
+            android:text="Trace la lettre !"
             android:textSize="18sp" />
 
         <TextView
@@ -66,21 +66,11 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/textView2"
             android:layout_alignBottom="@+id/textView2"
-            android:layout_alignStart="@+id/imageButton"
+            android:layout_alignEnd="@+id/imageButton"
+            android:layout_marginEnd="8dp"
             android:fontFamily="@font/rochester"
-            android:text="Fais des calculs !"
+            android:text="Dictée de mot"
             android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView5"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/rochester"
-            android:text="Choisis ton jeu :"
-            android:textSize="20sp" />
 
     </RelativeLayout>
 </LinearLayout>

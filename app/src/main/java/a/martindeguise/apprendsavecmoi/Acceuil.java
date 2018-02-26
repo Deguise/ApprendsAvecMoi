@@ -1,6 +1,7 @@
 package a.martindeguise.apprendsavecmoi;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,6 +17,10 @@ public class Acceuil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_acceuil);
+
+        MediaPlayer player = MediaPlayer.create(this, R.raw.theme1);
+        player.setLooping(true);
+        player.start();
 
         // Création bouton compte avec moi !
         final ImageButton compte = findViewById(R.id.imageButton);
@@ -34,7 +39,7 @@ public class Acceuil extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Acceuil.this, Compte.class);
+                Intent intent = new Intent(Acceuil.this, Ecris.class);
                 startActivity(intent);
             }
         });

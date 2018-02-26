@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash_screen">
 
-
     <ProgressBar
         android:id="@+id/progressBar4"
         style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
@@ -14,4 +13,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="96dp" />
+
 </RelativeLayout>

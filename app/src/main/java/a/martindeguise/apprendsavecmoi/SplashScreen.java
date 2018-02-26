@@ -4,6 +4,7 @@ package a.martindeguise.apprendsavecmoi;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -22,6 +23,9 @@ public class SplashScreen extends Activity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        MediaPlayer player = MediaPlayer.create(this, R.raw.theme1);
+        player.start();
 
          new Handler().postDelayed(new Runnable() {
 
