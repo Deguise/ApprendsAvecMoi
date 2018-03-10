@@ -1,11 +1,15 @@
 package a.martindeguise.apprendsavecmoi;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 // Imports pour le dessin seulement
@@ -14,6 +18,8 @@ import android.view.MotionEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Context;
+
+import java.io.FileInputStream;
 
 //---------------------------------
 
@@ -24,19 +30,33 @@ public class TraceLettreFacile extends AppCompatActivity
 	DrawingView dv;
 	private Paint mPaint;
 
+	// View view = (View) findViewById(R.layout.layout_trace_lettre_facile);
+	// LinearLayout picLL = new LinearLayout(CurrentActivity.this);
+
+
+	// ImageView myImage = new ImageView(this);
+	// picLL.addView(myImage);
+
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
+
+
 		super.onCreate(savedInstanceState);
 		//setContentView(R.layout.layout_trace_lettre_facile);
 
         dv = new DrawingView(this);
-		setContentView(dv);
+		setContentView(new DrawingView(this));
+
+
+
 
 		mPaint = new Paint();
 		mPaint.setAntiAlias(true);
 		mPaint.setDither(true);
-		mPaint.setColor(Color.GREEN);
+		mPaint.setColor(Color.BLUE);
 		mPaint.setStyle(Paint.Style.STROKE);
 		mPaint.setStrokeJoin(Paint.Join.ROUND);
 		mPaint.setStrokeCap(Paint.Cap.ROUND);
@@ -68,18 +88,27 @@ public class TraceLettreFacile extends AppCompatActivity
 			circlePaint = new Paint();
 			circlePath = new Path();
 			circlePaint.setAntiAlias(true);
-			circlePaint.setColor(Color.BLUE);
+			circlePaint.setColor(Color.YELLOW);
 			circlePaint.setStyle(Paint.Style.STROKE);
 			circlePaint.setStrokeJoin(Paint.Join.MITER);
 			circlePaint.setStrokeWidth(4f);
+
+
+			Drawable d = getResources().getDrawable(R.drawable.maj_a);
+			d.setBounds(0, 0, 0, 0);
 		}
 
 		@Override
 		protected void onSizeChanged(int w, int h, int oldw, int oldh)
 		{
 			super.onSizeChanged(w, h, oldw, oldh);
-			mBitmap = Bitmap.createBitmap(w,h,Bitmap.Config.ARGB_8888);
-			mCanvas = new Canvas (mBitmap);
+			Resources res = getResources();
+
+			// Nécessaire pour mettre l'image bitmap en arrière-plan du canvas
+			mBitmap = BitmapFactory.decodeResource(res, R.drawable.maj_a);
+
+			rescale(BitmapFactory.decodeResource(getResources(), R.drawable.maj_a));
+			mCanvas = new Canvas (mBitmap.copy(Bitmap.Config.ARGB_8888, true));
 		}
 
 		@Override
@@ -87,9 +116,14 @@ public class TraceLettreFacile extends AppCompatActivity
 		{
 			super.onDraw(canvas);
 
+            int x = getWidth();
+            int y = getHeight();
+
 			canvas.drawBitmap( mBitmap, 0,0, mBitmapPaint);
 			canvas.drawPath(mPath, mPaint);
 			canvas.drawPath(circlePath, circlePaint);
+
+
 		}
 
 		private float mX, mY;
@@ -151,6 +185,44 @@ public class TraceLettreFacile extends AppCompatActivity
 					break;
 			}
 			return true;
+		}
+
+        // @Override
+        // public boolean draw(Canvas canvas, MapView mapView, boolean shadow, long when)
+        // {
+        //     super.draw(canvas, mapView, shadow);
+
+        //     // convert point to pixels
+        //     Point screePts = new Point();
+        //     mapView.getProjection().toPixels(pointToDraw, screePts);
+        //     Bitmap bmp = BitmapFactory.decodeResource(getResource(), R.drawable.marker);
+        //     canvas.drawBitmap(bmp, screePts.x, screePts.y-24, null); 
+        //     return true;
+
+        // }
+
+		public Bitmap rescale(Bitmap originalImage)
+		{
+			float originalWidth = originalImage.getWidth();
+			float originalHeight = originalImage.getHeight();
+
+			Canvas canvas = new Canvas(mBitmap.copy(Bitmap.Config.ARGB_8888, true));
+
+			float scale = width / originalWidth;
+
+			float xTranslation = 0.0f;
+			float yTranslation = (height - originalHeight * scale) / 2.0f;
+
+			Matrix transformation = new Matrix();
+			transformation.postTranslate(xTranslation, yTranslation);
+			transformation.preScale(scale, scale);
+
+			Paint paint = new Paint();
+			paint.setFilterBitmap(true);
+
+			canvas.drawBitmap(originalImage, transformation, paint);
+
+			return mBitmap.copy(Bitmap.Config.ARGB_8888, true);
 		}
 	}
 }
