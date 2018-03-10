@@ -4,14 +4,14 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView26"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ecris le mot suivant avec le clavier:"
         android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView25"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mot  que l'enfant doit écrire"
@@ -19,7 +19,7 @@
         android:textSize="30sp"
         android:textStyle="bold" />
     <EditText
-        android:id="@+id/edittext"
+        android:id="@+id/edittext2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -27,7 +27,7 @@
         android:inputType="number" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"

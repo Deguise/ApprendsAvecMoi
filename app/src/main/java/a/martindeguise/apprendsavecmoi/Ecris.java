@@ -14,8 +14,8 @@ public class Ecris extends AppCompatActivity {
         setContentView(R.layout.layout_ecrit);
 
         // Création bouton Trace la lettre
-        final ImageButton faisDesCalculsButton = findViewById(R.id.imageButton);
-        faisDesCalculsButton.setOnClickListener(new View.OnClickListener() {
+        final ImageButton traceLettreButton = findViewById(R.id.imageButton11);
+        traceLettreButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -25,8 +25,8 @@ public class Ecris extends AppCompatActivity {
         });
 
         // Création bouton dictee de mots
-        final ImageButton compteObjetsButton= findViewById(R.id.imageButton2);
-        compteObjetsButton.setOnClickListener(new View.OnClickListener() {
+        final ImageButton dicteeMotsButton= findViewById(R.id.imageButton10);
+        dicteeMotsButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {

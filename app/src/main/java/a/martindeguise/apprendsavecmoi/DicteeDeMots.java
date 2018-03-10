@@ -22,12 +22,12 @@ public class DicteeDeMots extends AppCompatActivity {
         setContentView(R.layout.layout_dictee_mots);
 
         // Affichage du mot que l'enfant doit ecrire
-        TextView textView5 = findViewById(R.id.textView5);
+        TextView textView5 = findViewById(R.id.textView25);
         textView5.setText(mot.getSecretWord());
 
-        final EditText resultat = findViewById(R.id.edittext); // AJOUTER LA EDIT TEXT
+        final EditText resultat = findViewById(R.id.edittext2); // AJOUTER LA EDIT TEXT
 
-        final Button okButton = findViewById(R.id.button5);
+        final Button okButton = findViewById(R.id.button15);
         okButton.setOnClickListener(new View.OnClickListener() {
 
             @Override

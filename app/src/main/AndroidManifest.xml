@@ -48,7 +48,15 @@
             android:label="@string/app_name"
             android:screenOrientation="landscape"/>
         <activity
+            android:name=".Ecris"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"/>
+        <activity
             android:name=".DicteeDeMots"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Resultat_DicteeMots"
             android:label="@string/app_name"
             android:screenOrientation="landscape"/>
     </application>
