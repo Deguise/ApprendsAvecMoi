@@ -18,6 +18,17 @@ public class Dictee_de_mot extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_dictee_mot);
 
+        //Création bouton validé
+        final ImageButton validerButton = findViewById(R.id.imageButton);
+        validerButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dictee_de_mot.this, DicteeDeMots.class);
+                startActivity(intent);
+            }
+        });
+
         // Création bouton retour accueil avec moi
         final ImageButton accueilButton = findViewById(R.id.imageButton3);
         accueilButton.setOnClickListener(new View.OnClickListener() {
