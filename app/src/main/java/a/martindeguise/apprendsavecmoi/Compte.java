@@ -13,7 +13,7 @@ public class Compte extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_compte);
 
-        // Création bouton fasi des calculs
+        // Création bouton fais des calculs
         final ImageButton faisDesCalculsButton = findViewById(R.id.imageButton);
         faisDesCalculsButton.setOnClickListener(new View.OnClickListener() {
 

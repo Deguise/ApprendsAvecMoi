@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash_screen">
 
-
     <ProgressBar
         android:id="@+id/progressBar4"
         style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
