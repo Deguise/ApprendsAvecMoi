@@ -23,12 +23,12 @@ public class Addition extends AppCompatActivity {
         setContentView(R.layout.layout_addtion);
 
         // Affichage de l'addition
-        TextView textView5 = findViewById(R.id.textView5);
+        TextView textView5 = findViewById(R.id.textView35);
         textView5.setText(genererAddition());
 
-        final EditText resultat = findViewById(R.id.edittext); // AJOUTER LA EDIT TEXT
+        final EditText resultat = findViewById(R.id.edittext3); // AJOUTER LA EDIT TEXT
 
-        final Button okButton = findViewById(R.id.button5);
+        final Button okButton = findViewById(R.id.button35);
         okButton.setOnClickListener(new View.OnClickListener() {
 
             @Override

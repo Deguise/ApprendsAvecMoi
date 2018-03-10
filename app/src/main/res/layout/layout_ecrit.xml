@@ -9,7 +9,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/imageView55"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignParentStart="true"
@@ -17,7 +17,7 @@
             app:srcCompat="@android:color/holo_green_dark" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/textView56"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignParentStart="true"
@@ -27,54 +27,54 @@
             android:textSize="30sp" />
 
         <ImageButton
-            android:id="@+id/imageButton10"
+            android:id="@+id/imageButton50"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/imageView15"
+            android:layout_below="@+id/imageView55"
             android:layout_marginStart="100dp"
-            android:layout_marginTop="60dp"
-            android:background="@null"
-            app:srcCompat="@drawable/bouton_trace_lettre" />
-
-        <ImageButton
-            android:id="@+id/imageButton11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/imageView15"
-            android:layout_marginStart="450dp"
             android:layout_marginTop="60dp"
             android:background="@null"
             app:srcCompat="@drawable/bouton_dictee_mots" />
 
-        <TextView
-            android:id="@+id/textView17"
+        <ImageButton
+            android:id="@+id/imageButton51"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/imageButton11"
-            android:layout_below="@+id/imageButton11"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView55"
+            android:layout_marginStart="450dp"
+            android:layout_marginTop="60dp"
+            android:background="@null"
+            app:srcCompat="@drawable/bouton_trace_lettre" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imageButton51"
+            android:layout_below="@+id/imageButton51"
             android:layout_marginTop="11dp"
             android:fontFamily="@font/rochester"
             android:text="Trace la lettre"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/textView58"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView17"
-            android:layout_alignBottom="@+id/textView17"
-            android:layout_alignStart="@+id/imageButton10"
+            android:layout_alignBaseline="@+id/textView57"
+            android:layout_alignBottom="@+id/textView57"
+            android:layout_alignStart="@+id/imageButton50"
             android:fontFamily="@font/rochester"
             android:text="Dictée de mots"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/textView59"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView15"
+            android:layout_below="@+id/imageView55"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/rochester"

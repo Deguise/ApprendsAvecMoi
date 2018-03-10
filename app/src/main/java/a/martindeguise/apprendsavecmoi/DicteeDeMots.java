@@ -25,9 +25,9 @@ public class DicteeDeMots extends AppCompatActivity {
         TextView textView5 = findViewById(R.id.textView25);
         textView5.setText(mot.getSecretWord());
 
-        final EditText resultat = findViewById(R.id.edittext2); // AJOUTER LA EDIT TEXT
+        final EditText resultat = findViewById(R.id.edittext22); // AJOUTER LA EDIT TEXT
 
-        final Button okButton = findViewById(R.id.button15);
+        final Button okButton = findViewById(R.id.button25);
         okButton.setOnClickListener(new View.OnClickListener() {
 
             @Override

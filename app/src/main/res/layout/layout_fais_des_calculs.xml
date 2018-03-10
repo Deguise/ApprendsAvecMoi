@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/imageButton63"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -14,7 +14,7 @@
         android:background="@null"/>
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/imageButton64"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"

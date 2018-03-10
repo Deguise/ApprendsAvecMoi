@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView35"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -15,7 +15,7 @@
         android:textSize="40sp" />
 
     <EditText
-        android:id="@+id/edittext"
+        android:id="@+id/edittext3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -23,7 +23,7 @@
         android:inputType="number" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button35"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"

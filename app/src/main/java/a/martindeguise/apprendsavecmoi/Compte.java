@@ -14,7 +14,7 @@ public class Compte extends AppCompatActivity {
         setContentView(R.layout.layout_compte);
 
         // Création bouton fais des calculs
-        final ImageButton faisDesCalculsButton = findViewById(R.id.imageButton);
+        final ImageButton faisDesCalculsButton = findViewById(R.id.imageButton40);
         faisDesCalculsButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -25,7 +25,7 @@ public class Compte extends AppCompatActivity {
         });
 
         // Création bouton compte objets
-        final ImageButton compteObjetsButton= findViewById(R.id.imageButton2);
+        final ImageButton compteObjetsButton= findViewById(R.id.imageButton42);
         compteObjetsButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
