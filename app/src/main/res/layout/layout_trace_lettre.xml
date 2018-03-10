@@ -35,7 +35,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="60dp"
             android:background="@null"
-            app:srcCompat="@drawable/difficileTraceLettreButton" />
+            app:srcCompat="@drawable/difficile_trace_lettre_button" />
 
         <ImageButton
             android:id="@+id/imageButton81"
@@ -46,7 +46,7 @@
             android:layout_marginStart="450dp"
             android:layout_marginTop="60dp"
             android:background="@null"
-            app:srcCompat="@drawable/facileTraceLettreButton" />
+            app:srcCompat="@drawable/facile_trace_lettre_button" />
 
         <TextView
             android:id="@+id/textView87"
