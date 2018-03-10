@@ -23,7 +23,7 @@ public class TraceLettre extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TraceLettre.this, Acceuil.class);
+                Intent intent = new Intent(TraceLettre.this, TraceLettreFacile.class);
                 startActivity(intent);
             }
         });
