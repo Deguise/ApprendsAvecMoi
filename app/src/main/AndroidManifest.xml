@@ -59,5 +59,9 @@
             android:name=".Resultat_DicteeMots"
             android:label="@string/app_name"
             android:screenOrientation="landscape"/>
+        <activity
+            android:name=".TraceLettre"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"/>
     </application>
 </manifest>

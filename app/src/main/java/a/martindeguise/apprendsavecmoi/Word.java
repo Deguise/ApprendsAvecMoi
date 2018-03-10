@@ -13,7 +13,8 @@ import java.io.LineNumberReader;
 
 public class Word{
 
-    private String word = "", secretWord = "";
+    private String word = "";
+    private String secretWord = "";
     private char[] tabChar;
     private int error = 0;
     private int nbreCoup = 0;
