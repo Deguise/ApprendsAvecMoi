@@ -22,8 +22,11 @@ public class DicteeDeMots extends AppCompatActivity {
         setContentView(R.layout.layout_dictee_mots);
 
         // Affichage du mot que l'enfant doit ecrire
-        TextView textView5 = findViewById(R.id.textView25);
-        textView5.setText(mot.getSecretWord());
+        TextView textView25 = findViewById(R.id.textView25);
+        textView25.setText(mot.getWord());
+
+        // Affichage dans le terminal du mot à dicter
+        //System.out.println(mot.getWord());
 
         final EditText resultat = findViewById(R.id.edittext22); // AJOUTER LA EDIT TEXT
 
@@ -33,8 +36,8 @@ public class DicteeDeMots extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DicteeDeMots.this, Resultat_DicteeMots.class);
-                intent.putExtra(EXTRA_RESULTATUSER, resultat.getText().toString());
-                intent.putExtra(EXTRA_RESULTAT, mot.getSecretWord());
+                intent.putExtra(EXTRA_RESULTATUSER, resultat.getText());
+                intent.putExtra(EXTRA_RESULTAT, mot.getWord());
                 startActivity(intent);
             }
         });
