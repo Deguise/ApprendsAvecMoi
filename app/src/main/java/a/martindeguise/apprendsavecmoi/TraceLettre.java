@@ -15,7 +15,7 @@ public class TraceLettre extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_ecrit);
+        setContentView(R.layout.layout_trace_lettre);
 
         // Création bouton facile
         final ImageButton facileButton = findViewById(R.id.imageButton81);

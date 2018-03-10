@@ -19,7 +19,7 @@ public class Ecris extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Ecris.this, Acceuil.class);
+                Intent intent = new Intent(Ecris.this, TraceLettre.class);
                 startActivity(intent);
             }
         });
