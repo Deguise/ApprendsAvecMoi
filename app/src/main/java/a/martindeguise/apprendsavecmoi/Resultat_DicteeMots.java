@@ -43,12 +43,11 @@ public class Resultat_DicteeMots extends AppCompatActivity{
             textView9.setText(intent.getStringExtra(EXTRA_RESULTAT));
             textView7.setText(intent.getStringExtra(EXTRA_RESULTATUSER));
 
-            // Conserver uniquement les lettres et les chiffres
-            //EXTRA_RESULTAT.replaceAll("[\\s\\p{Punct}]","");
-            //EXTRA_RESULTATUSER.replaceAll("[\\s\\p{Punct}]","");
+            String resultat = EXTRA_RESULTAT;
+            String resultatUser = EXTRA_RESULTATUSER;
 
             //Affichage du message pour savoir si le resultat donnée par l'utilisateur est bon ou pas
-            if (EXTRA_RESULTAT.equals(EXTRA_RESULTATUSER)){
+            if (resultat.equals(resultatUser)){
                 textView8.setText("Bon");
             }
             else{
