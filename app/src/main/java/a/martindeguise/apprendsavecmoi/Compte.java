@@ -13,8 +13,8 @@ public class Compte extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_compte);
 
-        // Création bouton fasi des calculs
-        final ImageButton faisDesCalculsButton = findViewById(R.id.imageButton);
+        // Création bouton fais des calculs
+        final ImageButton faisDesCalculsButton = findViewById(R.id.imageButton2);
         faisDesCalculsButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -25,12 +25,23 @@ public class Compte extends AppCompatActivity {
         });
 
         // Création bouton compte objets
-        final ImageButton compteObjetsButton= findViewById(R.id.imageButton2);
+        final ImageButton compteObjetsButton= findViewById(R.id.imageButton);
         compteObjetsButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Compte.this, CompteObjet.class);
+                startActivity(intent);
+            }
+        });
+
+        // Création bouton retour accueil avec moi
+        final ImageButton accueilButton= findViewById(R.id.imageButton3);
+        accueilButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Compte.this, Acceuil.class);
                 startActivity(intent);
             }
         });

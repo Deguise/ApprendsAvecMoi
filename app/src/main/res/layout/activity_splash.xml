@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash_screen">
+    android:background="@drawable/splashscreen">
 
     <ProgressBar
         android:id="@+id/progressBar4"
@@ -12,6 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="96dp" />
+        android:layout_marginBottom="18dp" />
 
 </RelativeLayout>

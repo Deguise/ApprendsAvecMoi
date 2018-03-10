@@ -43,5 +43,16 @@ public class Acceuil extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Création bouton ma collection avec moi
+        final ImageButton collectionButton= findViewById(R.id.imageButton3);
+        collectionButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Acceuil.this, Collection.class);
+                startActivity(intent);
+            }
+        });
     }
 }

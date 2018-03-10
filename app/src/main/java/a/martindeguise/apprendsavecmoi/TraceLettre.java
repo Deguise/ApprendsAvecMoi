@@ -1,21 +1,21 @@
 package a.martindeguise.apprendsavecmoi;
 
-/**
- * Created by Leo on 26/02/2018.
- */
-
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Trace_la_lettre extends AppCompatActivity {
+/**
+ * Created by martin on 10/03/2018.
+ */
+
+public class TraceLettre extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_compte);
+        setContentView(R.layout.layout_trace_la_lettre);
 
         // Création bouton facile
         final ImageButton facileButton = findViewById(R.id.imageButton);
@@ -23,7 +23,7 @@ public class Trace_la_lettre extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Trace_la_lettre.this, Tracelalette_facile.class);
+                Intent intent = new Intent(TraceLettre.this, Tracelalette_facile.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +34,18 @@ public class Trace_la_lettre extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Trace_la_lettre.this, Tracelalettre_difficile.class);
+                Intent intent = new Intent(TraceLettre.this, Tracelalettre_difficile.class);
+                startActivity(intent);
+            }
+        });
+
+        // Création bouton retour accueil avec moi
+        final ImageButton accueilButton= findViewById(R.id.imageButton3);
+        accueilButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TraceLettre.this, Acceuil.class);
                 startActivity(intent);
             }
         });

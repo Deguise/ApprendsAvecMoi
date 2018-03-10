@@ -3,22 +3,96 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background_bandeau">
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        app:srcCompat="@drawable/bouton_additions"
-        android:background="@null"/>
+        android:orientation="horizontal">
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:fontFamily="@font/rochester"
+            android:text="Fais des calculs  !"
+            android:textColor="@color/colorText"
+            android:textSize="40sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:background="@null"
+            app:srcCompat="@drawable/retour_accueil" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        app:srcCompat="@drawable/bouton_addition_trou"
-        android:background="@null"/>
+        android:orientation="horizontal">
 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="250dp"
+            android:layout_weight="1"
+            android:background="@color/colorText"
+            android:fontFamily="@font/rochester"
+            android:text="Choisis ta difficulté :"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="247dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/addition" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="243dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/addition_trou" />
+
+
+    </RelativeLayout>
 </LinearLayout>
