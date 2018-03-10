@@ -12,7 +12,7 @@
         <activity
             android:name=".SplashScreen"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="landscape">
              <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -21,16 +21,7 @@
 
         <activity
             android:name=".Acceuil"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape"/>
-        <activity
-            android:name=".Compte"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape"/>
-        <activity
-            android:name=".FaisDesCalculs"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape"/>
+            android:label="@string/app_name" />
         <activity
             android:name=".Addition"
             android:label="@string/app_name"
@@ -40,7 +31,11 @@
             android:label="@string/app_name"
             android:screenOrientation="landscape"/>
         <activity
-            android:name=".Resultat"
+            android:name=".Collection"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Compte"
             android:label="@string/app_name"
             android:screenOrientation="landscape"/>
         <activity
@@ -48,11 +43,23 @@
             android:label="@string/app_name"
             android:screenOrientation="landscape"/>
         <activity
-            android:name=".Ecris"
+            android:name=".Dictee_de_mot"
             android:label="@string/app_name"
             android:screenOrientation="landscape"/>
         <activity
             android:name=".DicteeDeMots"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Ecris"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FaisDesCalculs"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Resultat"
             android:label="@string/app_name"
             android:screenOrientation="landscape"/>
         <activity
@@ -61,6 +68,14 @@
             android:screenOrientation="landscape"/>
         <activity
             android:name=".TraceLettre"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Tracelalettre_difficile"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Tracelalette_facile"
             android:label="@string/app_name"
             android:screenOrientation="landscape"/>
     </application>

@@ -20,7 +20,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="13dp"
             android:fontFamily="@font/rochester"
-            android:text="Fais des calculs  !"
+            android:text="Trace la lettre  !"
             android:textColor="@color/colorText"
             android:textSize="40sp" />
 
@@ -72,7 +72,7 @@
             android:layout_marginEnd="247dp"
             android:background="@null"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/addition" />
+            app:srcCompat="@drawable/trace_lettre_facile" />
 
     </RelativeLayout>
 
@@ -91,7 +91,7 @@
             android:layout_marginEnd="243dp"
             android:background="@null"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/addition_trou" />
+            app:srcCompat="@drawable/trace_lettre_difficile" />
 
 
     </RelativeLayout>

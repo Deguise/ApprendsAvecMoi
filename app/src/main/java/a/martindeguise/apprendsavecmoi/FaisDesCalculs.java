@@ -14,7 +14,7 @@ public class FaisDesCalculs extends AppCompatActivity {
         setContentView(R.layout.layout_fais_des_calculs);
 
         // Création bouton addtion
-        final ImageButton additionButton = findViewById(R.id.imageButton63);
+        final ImageButton additionButton = findViewById(R.id.imageButton2);
         additionButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -25,7 +25,7 @@ public class FaisDesCalculs extends AppCompatActivity {
         });
 
         // Création bouton addtion a trou
-        final ImageButton additionTrouButton = findViewById(R.id.imageButton64);
+        final ImageButton additionTrouButton = findViewById(R.id.imageButton);
         additionTrouButton.setOnClickListener(new View.OnClickListener() {
 
             @Override

@@ -15,22 +15,33 @@ public class TraceLettre extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_trace_lettre);
+        setContentView(R.layout.layout_trace_la_lettre);
 
         // Création bouton facile
-        final ImageButton facileButton = findViewById(R.id.imageButton81);
+        final ImageButton facileButton = findViewById(R.id.imageButton);
         facileButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TraceLettre.this, Acceuil.class);
+                Intent intent = new Intent(TraceLettre.this, Tracelalette_facile.class);
                 startActivity(intent);
             }
         });
 
         // Création bouton difficile
-        final ImageButton difficileButton = findViewById(R.id.imageButton80);
+        final ImageButton difficileButton= findViewById(R.id.imageButton2);
         difficileButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TraceLettre.this, Tracelalettre_difficile.class);
+                startActivity(intent);
+            }
+        });
+
+        // Création bouton retour accueil avec moi
+        final ImageButton accueilButton= findViewById(R.id.imageButton3);
+        accueilButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {

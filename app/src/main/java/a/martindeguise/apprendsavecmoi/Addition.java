@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.lang.Math;
@@ -21,6 +22,17 @@ public class Addition extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_addtion);
+
+        // Création bouton retour accueil avec moi
+        final ImageButton accueilButton= findViewById(R.id.imageButton3);
+        accueilButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Addition.this, Acceuil.class);
+                startActivity(intent);
+            }
+        });
 
         // Affichage de l'addition
         TextView textView5 = findViewById(R.id.textView35);

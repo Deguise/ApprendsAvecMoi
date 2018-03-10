@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class DicteeDeMots extends AppCompatActivity {
@@ -20,6 +21,17 @@ public class DicteeDeMots extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mot = new Word();
         setContentView(R.layout.layout_dictee_mots);
+
+        // Création bouton retour accueil avec moi
+        final ImageButton accueilButton= findViewById(R.id.imageButton3);
+        accueilButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DicteeDeMots.this, Acceuil.class);
+                startActivity(intent);
+            }
+        });
 
         // Affichage du mot que l'enfant doit ecrire
         TextView textView25 = findViewById(R.id.textView25);
