@@ -38,6 +38,9 @@ public class Resultat extends AppCompatActivity{
         TextView textView9 = findViewById(R.id.textView9); // Vrai resultat
         TextView textView7 = findViewById(R.id.textView7); // Resultat donnée par l'utilisateur
         TextView textView8 = findViewById(R.id.textView8); // Dire a l'utilisateur si son resultat est bon ou pas
+        TextView textView10 = findViewById(R.id.textView10); //Affiche le calcul fait par précédement
+
+
 
         if (intent != null) {
             textView9.setText(intent.getStringExtra(EXTRA_RESULTAT));
