@@ -18,7 +18,7 @@ public class DicteeDeMots extends AppCompatActivity {
     final String EXTRA_RESULTATUSER = "resultatUser";
     final String EXTRA_RESULTAT = "resultat";
     private String word = "mot de base";
-    private static String filepath = "dictionnaire.txt";
+    private static String filepath = "R.raw.dictionnaire";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class DicteeDeMots extends AppCompatActivity {
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(
-                new InputStreamReader(getAssets().open(filepath)));
+                new InputStreamReader(getAssets().open("dictionnaire.txt")));
 
             // do reading, usually loop until end of file reading
             String mLine;
