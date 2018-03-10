@@ -18,7 +18,7 @@ public class DicteeDeMots extends AppCompatActivity {
     final String EXTRA_RESULTATUSER = "resultatUser";
     final String EXTRA_RESULTAT = "resultat";
     private String word = "mot de base";
-    private static String filepath = "R.raw.dictionnaire";
+    private static String filepath = "dictionnaire.txt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class DicteeDeMots extends AppCompatActivity {
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(
-                new InputStreamReader(getAssets().open("dictionnaire.txt")));
+                new InputStreamReader(getAssets().open(filepath)));
 
             // do reading, usually loop until end of file reading
             String mLine;
@@ -73,7 +73,6 @@ public class DicteeDeMots extends AppCompatActivity {
         TextView textView25 = findViewById(R.id.textView25);
         textView25.setText(word);
 
-
         final EditText resultat = findViewById(R.id.edittext22); // AJOUTER LA EDIT TEXT
 
         final Button okButton = findViewById(R.id.button25);
@@ -82,7 +81,7 @@ public class DicteeDeMots extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DicteeDeMots.this, Resultat_DicteeMots.class);
-                intent.putExtra(EXTRA_RESULTATUSER, resultat.getText());
+                intent.putExtra(EXTRA_RESULTATUSER, resultat.getText().toString());
                 intent.putExtra(EXTRA_RESULTAT, word);
                 startActivity(intent);
             }
