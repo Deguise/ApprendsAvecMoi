@@ -6,6 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 /**
  * Created by martin on 12/01/2018.
@@ -65,6 +71,20 @@ public class Resultat extends AppCompatActivity{
             }
             // Enrengistrement dans un fichier text
             Score score = new Score(resultat, resultatUser, equation, reussit);
+
+            try {
+
+                // write object to file
+                FileOutputStream fileOut = new FileOutputStream("score.ser");
+                ObjectOutputStream oos = new ObjectOutputStream(fileOut);
+                oos.writeObject(score);
+                oos.close();
+
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
