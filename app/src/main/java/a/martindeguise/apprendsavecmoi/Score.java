@@ -1,7 +1,16 @@
 package a.martindeguise.apprendsavecmoi;
 
+import java.io.EOFException;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 import java.util.Date;
 import java.io.Serializable;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -17,7 +26,13 @@ public class Score implements Serializable{
     private String equation;
     private String reussit;
     private static final AtomicInteger count = new AtomicInteger(0);
-    private static final long serialVersionUID = 46543445;
+
+    private static List<Score> scores;
+    private String filePath = "score.ser";
+
+    public Score(){
+
+    }
 
     public Score(String resultat, String resultatUser, String equation, String reussit) {
         this.id = count.incrementAndGet();
@@ -71,5 +86,37 @@ public class Score implements Serializable{
     @Override
     public String toString() {
         return "id: " + id + "\nEquation: " + equation + "\nResultat attendu: " + resultat + "\nVotre resultat: " + resultatUser + "L'exercice est reussit? " + reussit;
+    }
+
+    public void saveScores(List<Score> score) {
+        // Enrengistrement dans un fichier text
+        try {
+            // write object to file
+            FileOutputStream fileOut = new FileOutputStream(filePath);
+            ObjectOutputStream oos = new ObjectOutputStream(fileOut);
+            oos.writeObject(score);
+            oos.close();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public List<Score> getAllScores() throws IOException, ClassNotFoundException {
+
+        FileInputStream fis = new FileInputStream(filePath);
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        List<Score> scores = (List<Score>) ois.readObject();
+        return scores;
+    }
+
+    public static List<Score> getScores() {
+        return scores;
+    }
+
+    public void setScore(Score score){
+        scores.add(score);
     }
 }

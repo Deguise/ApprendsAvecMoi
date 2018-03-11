@@ -66,6 +66,8 @@ public class Resultat_DicteeMots extends AppCompatActivity {
             } else {
                 textView8.setText("Pas bon");
             }
+
+            /*
             // Enrengistrement dans un fichier text
             Score score = new Score(resultat, resultatUser, equation, reussit);
             try {
@@ -80,6 +82,7 @@ public class Resultat_DicteeMots extends AppCompatActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            */
         }
     }
 

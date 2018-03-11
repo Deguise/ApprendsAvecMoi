@@ -50,7 +50,7 @@ public class Acceuil extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Acceuil.this, AffichageScore.class);
+                Intent intent = new Intent(Acceuil.this, Collection.class);
                 startActivity(intent);
             }
         });
