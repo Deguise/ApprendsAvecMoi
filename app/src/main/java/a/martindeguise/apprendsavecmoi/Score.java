@@ -17,6 +17,7 @@ public class Score implements Serializable{
     private String equation;
     private String reussit;
     private static final AtomicInteger count = new AtomicInteger(0);
+    private static final long serialVersionUID = 46543445;
 
     public Score(String resultat, String resultatUser, String equation, String reussit) {
         this.id = count.incrementAndGet();
@@ -67,9 +68,8 @@ public class Score implements Serializable{
         this.reussit = reussit;
     }
 
-    // Sera utilisée par ArrayAdapter dans la ListView
     @Override
     public String toString() {
-        return reussit.toString();
+        return "id: " + id + "\nEquation: " + equation + "\nResultat attendu: " + resultat + "\nVotre resultat: " + resultatUser + "L'exercice est reussit? " + reussit;
     }
 }

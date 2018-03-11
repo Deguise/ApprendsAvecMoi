@@ -68,7 +68,18 @@ public class Resultat_DicteeMots extends AppCompatActivity {
             }
             // Enrengistrement dans un fichier text
             Score score = new Score(resultat, resultatUser, equation, reussit);
+            try {
+                // write object to file
+                FileOutputStream fileOut = new FileOutputStream("score.ser");
+                ObjectOutputStream oos = new ObjectOutputStream(fileOut);
+                oos.writeObject(score);
+                oos.close();
 
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
