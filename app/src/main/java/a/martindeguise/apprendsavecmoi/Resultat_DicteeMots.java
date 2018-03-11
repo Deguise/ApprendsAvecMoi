@@ -11,10 +11,15 @@ import android.widget.TextView;
  * Created by martin on 12/01/2018.
  */
 
-public class Resultat_DicteeMots extends AppCompatActivity{
+public class Resultat_DicteeMots extends AppCompatActivity {
 
     final String EXTRA_RESULTATUSER = "resultatUser";
     final String EXTRA_RESULTAT = "resultat";
+
+    private String resultat = "";
+    private String resultatUser = "";
+    private String equation = "";
+    private Boolean reussit = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +27,7 @@ public class Resultat_DicteeMots extends AppCompatActivity{
         setContentView(R.layout.layout_resultat_dictee_mots);
 
         // Création bouton retour accueil avec moi
-        final ImageButton accueilButton= findViewById(R.id.imageButton3);
+        final ImageButton accueilButton = findViewById(R.id.imageButton3);
         accueilButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -43,16 +48,45 @@ public class Resultat_DicteeMots extends AppCompatActivity{
             textView70.setText(intent.getStringExtra(EXTRA_RESULTAT));
             textView71.setText(intent.getStringExtra(EXTRA_RESULTATUSER));
 
-            String resultat = intent.getStringExtra(EXTRA_RESULTAT).toString();
-            String resultatUser = intent.getStringExtra(EXTRA_RESULTATUSER).toString();
+            resultat = intent.getStringExtra(EXTRA_RESULTAT).toString();
+            resultatUser = intent.getStringExtra(EXTRA_RESULTATUSER).toString();
+            equation = intent.getStringExtra(EXTRA_RESULTAT);
 
             //Affichage du message pour savoir si le resultat donnée par l'utilisateur est bon ou pas
-            if (resultat.equalsIgnoreCase(resultatUser)){
+            if (resultat.equalsIgnoreCase(resultatUser)) {
+                reussit = true;
                 textView8.setText("Bon");
-            }
-            else{
+            } else {
                 textView8.setText("Pas bon");
             }
+            inBDD();
         }
+    }
+
+    public String getVraiResultat() {
+        return resultat;
+    }
+
+    public String getResultatUser() {
+        return resultatUser;
+    }
+
+    public String getEquation() {
+        return equation;
+    }
+
+    public Boolean getReussit() {
+        return reussit;
+    }
+
+    public void inBDD() {
+        //Création d'une instance de ma classe LivresBDD
+        ScoresBDD scoreBdd = new ScoresBDD(this);
+
+        //On ouvre la base de données pour écrire dedans
+        scoreBdd.open();
+        //On insère le livre que l'on vient de créer
+        scoreBdd.insertScore(resultat, resultatUser, equation, reussit);
+        scoreBdd.close();
     }
 }
