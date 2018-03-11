@@ -37,7 +37,7 @@ public class Ecris extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Ecris.this, Dictee_de_mot.class);
+                Intent intent = new Intent(Ecris.this, DicteeDeMots.class);
                 startActivity(intent);
             }
         });

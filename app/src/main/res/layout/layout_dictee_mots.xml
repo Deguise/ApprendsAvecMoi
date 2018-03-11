@@ -39,14 +39,14 @@
         android:id="@+id/textView26"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ecris le mot suivant avec le clavier:"
+        android:text="Ecris le mot suivant:"
         android:textSize="30sp" />
 
     <TextView
         android:id="@+id/textView25"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mot  que l'enfant doit écrire"
+        android:text="Mot que l'enfant doit écrire"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="text" />
 
     <Button
         android:id="@+id/button25"

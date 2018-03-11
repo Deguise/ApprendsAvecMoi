@@ -17,6 +17,7 @@ public class Addition extends AppCompatActivity {
 
     final String EXTRA_RESULTATUSER = "resultatUser";
     final String EXTRA_RESULTAT = "resultat";
+    final String EXTRA_EQUATION = "Equation";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +36,9 @@ public class Addition extends AppCompatActivity {
         });
 
         // Affichage de l'addition
+        final String addition = genererAddition();
         TextView textView5 = findViewById(R.id.textView35);
-        textView5.setText(genererAddition());
+        textView5.setText(addition);
 
         final EditText resultat = findViewById(R.id.edittext3); // AJOUTER LA EDIT TEXT
 
@@ -48,6 +50,7 @@ public class Addition extends AppCompatActivity {
                 Intent intent = new Intent(Addition.this, Resultat.class);
                 intent.putExtra(EXTRA_RESULTATUSER, resultat.getText().toString());
                 intent.putExtra(EXTRA_RESULTAT, Integer.toString(resultat()));
+                intent.putExtra(EXTRA_EQUATION, addition);
                 startActivity(intent);
             }
         });

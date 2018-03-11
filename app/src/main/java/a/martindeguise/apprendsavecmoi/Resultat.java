@@ -15,6 +15,7 @@ public class Resultat extends AppCompatActivity{
 
     final String EXTRA_RESULTATUSER = "resultatUser";
     final String EXTRA_RESULTAT = "resultat";
+    final String EXTRA_EQUATION = "Equation";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,20 +39,20 @@ public class Resultat extends AppCompatActivity{
         TextView textView9 = findViewById(R.id.textView9); // Vrai resultat
         TextView textView7 = findViewById(R.id.textView7); // Resultat donnée par l'utilisateur
         TextView textView8 = findViewById(R.id.textView8); // Dire a l'utilisateur si son resultat est bon ou pas
-        TextView textView10 = findViewById(R.id.textView10); //Affiche le calcul fait par précédement
+        TextView textView11 = findViewById(R.id.textView11); //Affiche le calcul fait par précédement
 
 
 
         if (intent != null) {
             textView9.setText(intent.getStringExtra(EXTRA_RESULTAT));
             textView7.setText(intent.getStringExtra(EXTRA_RESULTATUSER));
+            textView11.setText(intent.getStringExtra(EXTRA_EQUATION));
 
-            // Conserver uniquement les lettres et les chiffres
-            //EXTRA_RESULTAT.replaceAll("[\\s\\p{Punct}]","");
-            //EXTRA_RESULTATUSER.replaceAll("[\\s\\p{Punct}]","");
+            String resultat = intent.getStringExtra(EXTRA_RESULTAT);
+            String resultatUser = intent.getStringExtra(EXTRA_RESULTATUSER);
 
             //Affichage du message pour savoir si le resultat donnée par l'utilisateur est bon ou pas
-            if (EXTRA_RESULTAT.equals(EXTRA_RESULTATUSER)){
+            if (resultat.equals(resultatUser)){
                 textView8.setText("Bon");
             }
             else{

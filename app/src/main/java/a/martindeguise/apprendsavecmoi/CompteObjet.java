@@ -24,6 +24,8 @@ public class CompteObjet extends AppCompatActivity{
 
     final String EXTRA_RESULTATUSER = "resultatUser";
     final String EXTRA_RESULTAT = "resultat";
+    final String EXTRA_EQUATION = "Equation";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,6 +147,8 @@ public class CompteObjet extends AppCompatActivity{
                 Intent intent = new Intent(CompteObjet.this, Resultat.class);
                 intent.putExtra(EXTRA_RESULTATUSER, editText.getText().toString());
                 intent.putExtra(EXTRA_RESULTAT, Integer.toString(resultat()));
+                String value = getNb1() + " pomme(s) + " + getNb2() + " pomme(s)";
+                intent.putExtra(EXTRA_EQUATION, value);
                 startActivity(intent);
             }
         });

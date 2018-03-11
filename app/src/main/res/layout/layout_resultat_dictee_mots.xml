@@ -54,9 +54,8 @@
             android:id="@+id/textView72"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="47dp"
-            android:layout_marginTop="13dp"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView76"
             android:layout_weight="1"
             android:text="Bon ?"
             android:textSize="50sp" />
