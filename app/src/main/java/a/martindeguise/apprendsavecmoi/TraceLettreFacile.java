@@ -50,9 +50,6 @@ public class TraceLettreFacile extends AppCompatActivity
         dv = new DrawingView(this);
 		setContentView(new DrawingView(this));
 
-
-
-
 		mPaint = new Paint();
 		mPaint.setAntiAlias(true);
 		mPaint.setDither(true);
@@ -61,9 +58,6 @@ public class TraceLettreFacile extends AppCompatActivity
 		mPaint.setStrokeJoin(Paint.Join.ROUND);
 		mPaint.setStrokeCap(Paint.Cap.ROUND);
 		mPaint.setStrokeWidth(12);
-
-	//	TextView textView = findViewById(R.id.textView30);
-	//	textView.setText("Trace la lettre dans la zone ci-dessous !");
 
 	}
 
@@ -108,7 +102,7 @@ public class TraceLettreFacile extends AppCompatActivity
 			mBitmap = BitmapFactory.decodeResource(res, R.drawable.maj_a);
 
 			rescale(BitmapFactory.decodeResource(getResources(), R.drawable.maj_a));
-			mCanvas = new Canvas (mBitmap.copy(Bitmap.Config.ARGB_8888, true));
+			mCanvas = new Canvas (mBitmap.copy(Bitmap.Config.ARGB_8888, true)); 
 		}
 
 		@Override
@@ -157,10 +151,12 @@ public class TraceLettreFacile extends AppCompatActivity
 		{
 			mPath.lineTo(mX,mY);
 			circlePath.reset();
+
 			// Commit the path to our offscreen
 			mCanvas.drawPath(mPath, mPaint);
+
 			// kill this so we don't double draw
-			mPath.reset();
+			//mPath.reset();
 		}
 
 		@Override
@@ -186,20 +182,6 @@ public class TraceLettreFacile extends AppCompatActivity
 			}
 			return true;
 		}
-
-        // @Override
-        // public boolean draw(Canvas canvas, MapView mapView, boolean shadow, long when)
-        // {
-        //     super.draw(canvas, mapView, shadow);
-
-        //     // convert point to pixels
-        //     Point screePts = new Point();
-        //     mapView.getProjection().toPixels(pointToDraw, screePts);
-        //     Bitmap bmp = BitmapFactory.decodeResource(getResource(), R.drawable.marker);
-        //     canvas.drawBitmap(bmp, screePts.x, screePts.y-24, null); 
-        //     return true;
-
-        // }
 
 		public Bitmap rescale(Bitmap originalImage)
 		{
