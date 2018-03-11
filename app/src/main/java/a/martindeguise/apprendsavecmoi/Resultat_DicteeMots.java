@@ -6,6 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
 /**
  * Created by martin on 12/01/2018.
@@ -19,7 +26,7 @@ public class Resultat_DicteeMots extends AppCompatActivity {
     private String resultat = "";
     private String resultatUser = "";
     private String equation = "";
-    private Boolean reussit = false;
+    private String reussit = "Non";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,12 +61,14 @@ public class Resultat_DicteeMots extends AppCompatActivity {
 
             //Affichage du message pour savoir si le resultat donnée par l'utilisateur est bon ou pas
             if (resultat.equalsIgnoreCase(resultatUser)) {
-                reussit = true;
+                reussit = "Oui";
                 textView8.setText("Bon");
             } else {
                 textView8.setText("Pas bon");
             }
-            inBDD();
+            // Enrengistrement dans un fichier text
+            Score score = new Score(resultat, resultatUser, equation, reussit);
+
         }
     }
 
@@ -75,18 +84,8 @@ public class Resultat_DicteeMots extends AppCompatActivity {
         return equation;
     }
 
-    public Boolean getReussit() {
+    public String getReussit() {
         return reussit;
     }
 
-    public void inBDD() {
-        //Création d'une instance de ma classe LivresBDD
-        ScoresBDD scoreBdd = new ScoresBDD(this);
-
-        //On ouvre la base de données pour écrire dedans
-        scoreBdd.open();
-        //On insère le livre que l'on vient de créer
-        scoreBdd.insertScore(resultat, resultatUser, equation, reussit);
-        scoreBdd.close();
-    }
 }
