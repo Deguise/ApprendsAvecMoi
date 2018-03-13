@@ -83,6 +83,7 @@ public class CompteObjet extends AppCompatActivity{
             tableRow2.addView(image);
         }
 
+        /*
         // Creation de la troisieme ligne
         TableRow tableRow3 = new TableRow(this);
         tableRow3.setLayoutParams(tableParams);// TableLayout is the parent view
@@ -94,6 +95,7 @@ public class CompteObjet extends AppCompatActivity{
         rowParams1.gravity = 1;
         signePlus.setLayoutParams(rowParams1); // causes layout update
         tableRow3.addView(signePlus);
+        */
 
         // Creation de la quatrieme ligne
         TableRow tableRow4 = new TableRow(this);
@@ -106,14 +108,17 @@ public class CompteObjet extends AppCompatActivity{
             tableRow4.addView(image);
         }
 
+
         // Creation de la cinquième ligne
         TableRow tableRow5 = new TableRow(this);
         tableRow5.setLayoutParams(tableParams);// TableLayout is the parent view
 
+        /*
         // Ajout du signe égal
         ImageView signeEgal = new ImageView(this);
         signeEgal.setBackgroundResource(R.drawable.egal);
         tableRow5.addView(signeEgal);
+        */
 
         // Ajout de la zone de texte editable par l'utilisateur
         final EditText editText = new EditText(this);
@@ -133,7 +138,7 @@ public class CompteObjet extends AppCompatActivity{
         // Ajout de toutes les lignes dans le table Layout
         tableLayout.addView(tableRow1);
         tableLayout.addView(tableRow2);
-        tableLayout.addView(tableRow3);
+        //tableLayout.addView(tableRow3);
         tableLayout.addView(tableRow4);
         tableLayout.addView(tableRow5);
 
