@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -20,9 +20,9 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="13dp"
             android:fontFamily="@font/rochester"
-            android:text=" Dictée de mot  !"
+            android:text=" Fais des calculs - Additions !"
             android:textColor="@color/colorText"
-            android:textSize="40sp" />
+            android:textSize="35sp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -31,7 +31,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="13dp"
-            android:paddingRight="210dp"
+            android:paddingRight="50dp"
             android:text="" />
 
         <ImageButton
@@ -50,7 +50,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="30dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -94,7 +94,9 @@
             android:layout_weight="1"
             android:background="@color/colorText"
             android:fontFamily="@font/rochester"
-            android:text=" Dans cet exercice, écrit le mot que tu entends à l'aide du clavier. Valide ta réponse en cliquant sur Valider.                                         A toi de jouer !"
+            android:text=" Dans cet exercice, donne le résultat de l'addition à l'aide du clavier.
+ Clique sur Valider pour confirmer ta réponse.
+ A toi de jouer !"
             android:textSize="30sp" />
 
     </RelativeLayout>

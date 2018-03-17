@@ -33,7 +33,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="13dp"
             android:text=""
-            android:paddingRight="200dp" />
+            android:paddingRight="210dp" />
 
         <ImageButton
             android:id="@+id/imageButton3"

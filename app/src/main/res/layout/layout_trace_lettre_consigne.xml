@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="65dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -20,7 +20,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="13dp"
             android:fontFamily="@font/rochester"
-            android:text=" Dictée de mot  !"
+            android:text=" Trace la lettre  !"
             android:textColor="@color/colorText"
             android:textSize="40sp" />
 
@@ -94,7 +94,7 @@
             android:layout_weight="1"
             android:background="@color/colorText"
             android:fontFamily="@font/rochester"
-            android:text=" Dans cet exercice, écrit le mot que tu entends à l'aide du clavier. Valide ta réponse en cliquant sur Valider.                                         A toi de jouer !"
+            android:text=" Dans cet exercice, tu va devoir reproduire la lettre affiché à l'écran  en la traçant avec ton doigt sur l'écran. Valide ta réponse en  cliquant sur Valider.                                                                        A toi de jouer !"
             android:textSize="30sp" />
 
     </RelativeLayout>
@@ -117,6 +117,5 @@
             app:srcCompat="@drawable/commencer" />
 
     </RelativeLayout>
-
 
 </LinearLayout>

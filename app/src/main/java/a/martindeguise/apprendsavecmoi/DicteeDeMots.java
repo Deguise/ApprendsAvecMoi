@@ -25,6 +25,7 @@ public class DicteeDeMots extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_dictee_mots);
 
+
         // Determiner la ligne du mot dans le dictionnaire
         int i = (int)(Math.random() * 100000);
         while(i > 336529){
@@ -75,7 +76,7 @@ public class DicteeDeMots extends AppCompatActivity {
 
         final EditText resultat = findViewById(R.id.edittext22); // AJOUTER LA EDIT TEXT
 
-        final Button okButton = findViewById(R.id.button25);
+        final ImageButton okButton = findViewById(R.id.imageButton25);
         okButton.setOnClickListener(new View.OnClickListener() {
 
             @Override

@@ -43,7 +43,7 @@ public class Addtion_trou extends AppCompatActivity{
 
         final EditText resultat = findViewById(R.id.edittext); // AJOUTER LA EDIT TEXT
 
-        final Button okButton = findViewById(R.id.button5);
+        final ImageButton okButton = findViewById(R.id.imageButton5);
         okButton.setOnClickListener(new View.OnClickListener() {
 
             @Override

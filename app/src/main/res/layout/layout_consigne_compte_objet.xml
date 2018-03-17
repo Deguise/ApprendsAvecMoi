@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="65dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -20,7 +20,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="13dp"
             android:fontFamily="@font/rochester"
-            android:text=" Dictée de mot  !"
+            android:text=" Compte les objets  !"
             android:textColor="@color/colorText"
             android:textSize="40sp" />
 
@@ -94,7 +94,9 @@
             android:layout_weight="1"
             android:background="@color/colorText"
             android:fontFamily="@font/rochester"
-            android:text=" Dans cet exercice, écrit le mot que tu entends à l'aide du clavier. Valide ta réponse en cliquant sur Valider.                                         A toi de jouer !"
+            android:text=" Dans cet exercice, comptes le nombre d'objets affichés à l'écran et  écrit le nombre trouvé avec le clavier.
+ Clique sur Valider pour confirmer ta réponse.
+ A toi de jouer !"
             android:textSize="30sp" />
 
     </RelativeLayout>

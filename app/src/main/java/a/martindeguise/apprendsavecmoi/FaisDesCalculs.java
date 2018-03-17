@@ -34,5 +34,16 @@ public class FaisDesCalculs extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Création bouton retour accueil avec moi
+        final ImageButton accueilButton = findViewById(R.id.imageButton3);
+        accueilButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FaisDesCalculs.this, Acceuil.class);
+                startActivity(intent);
+            }
+        });
     }
 }

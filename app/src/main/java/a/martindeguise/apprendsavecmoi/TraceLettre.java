@@ -23,7 +23,7 @@ public class TraceLettre extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TraceLettre.this, Tracelalette_facile.class);
+                Intent intent = new Intent(TraceLettre.this, Consigne_Tracelettre.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +34,7 @@ public class TraceLettre extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TraceLettre.this, Tracelalettre_difficile.class);
+                Intent intent = new Intent(TraceLettre.this, Consigne_Tracelettredifficile.class);
                 startActivity(intent);
             }
         });

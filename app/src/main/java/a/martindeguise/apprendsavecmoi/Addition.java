@@ -42,7 +42,7 @@ public class Addition extends AppCompatActivity {
 
         final EditText resultat = findViewById(R.id.edittext3); // AJOUTER LA EDIT TEXT
 
-        final Button okButton = findViewById(R.id.button35);
+        final ImageButton okButton = findViewById(R.id.imageButton35);
         okButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
