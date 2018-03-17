@@ -50,7 +50,6 @@ public class Collection extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 
     public class ImageAdapter extends BaseAdapter{
@@ -214,9 +213,5 @@ public class Collection extends AppCompatActivity {
                 R.drawable.fais_calculs_addition_trou_radis,
                 R.drawable.fais_calculs_addition_trou_citrouille,
         };
-
-
-
     }
-
 }

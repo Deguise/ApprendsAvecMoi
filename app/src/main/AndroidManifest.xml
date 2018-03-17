@@ -31,6 +31,10 @@
             android:label="@string/app_name"
             android:screenOrientation="landscape"/>
         <activity
+            android:name=".AffichageScore"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"/>
+        <activity
             android:name=".Collection"
             android:label="@string/app_name"
             android:screenOrientation="landscape"/>

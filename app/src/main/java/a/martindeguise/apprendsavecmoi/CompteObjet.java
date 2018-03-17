@@ -20,12 +20,11 @@ import android.widget.TextView;
  */
 
 public class CompteObjet extends AppCompatActivity{
-    private int nb1, nb2;
+    private int nb1, nb2, nb3;
 
     final String EXTRA_RESULTATUSER = "resultatUser";
     final String EXTRA_RESULTAT = "resultat";
     final String EXTRA_EQUATION = "Equation";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,10 +82,19 @@ public class CompteObjet extends AppCompatActivity{
             tableRow2.addView(image);
         }
 
+
         // Creation de la troisieme ligne
         TableRow tableRow3 = new TableRow(this);
         tableRow3.setLayoutParams(tableParams);// TableLayout is the parent view
 
+        // Création de la première ranger de pomme
+        for(int x=0;x<nb3;x++) {
+            ImageView image = new ImageView(this);
+            image.setBackgroundResource(R.drawable.pomme);
+            tableRow3.addView(image);
+        }
+
+        /*
         // Ajout du signe plus à la ligne
         ImageView signePlus = new ImageView(this);
         signePlus.setBackgroundResource(R.drawable.plus);
@@ -94,6 +102,7 @@ public class CompteObjet extends AppCompatActivity{
         rowParams1.gravity = 1;
         signePlus.setLayoutParams(rowParams1); // causes layout update
         tableRow3.addView(signePlus);
+        */
 
         // Creation de la quatrieme ligne
         TableRow tableRow4 = new TableRow(this);
@@ -161,6 +170,7 @@ public class CompteObjet extends AppCompatActivity{
     public void genererLayout() {
         nb1 = generateurNombreAleatoire(4);
         nb2 = generateurNombreAleatoire(4);
+        nb3 = generateurNombreAleatoire(4);
     }
 
     public int getNb1() {
