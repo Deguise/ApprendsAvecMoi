@@ -23,7 +23,7 @@ public class Tracelalettre_difficile extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Tracelalettre_difficile.this, Acceuil.class);
+                Intent intent = new Intent(Tracelalettre_difficile.this, PopActivity.class);
                 startActivity(intent);
             }
         });

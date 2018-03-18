@@ -65,7 +65,7 @@ public class DicteeDeMots extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DicteeDeMots.this, Acceuil.class);
+                Intent intent = new Intent(DicteeDeMots.this, PopActivity.class);
                 startActivity(intent);
             }
         });

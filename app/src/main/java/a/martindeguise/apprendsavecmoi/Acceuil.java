@@ -18,9 +18,9 @@ public class Acceuil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_acceuil);
 
-        MediaPlayer player = MediaPlayer.create(this, R.raw.theme1);
-        player.setLooping(true);
-        player.start();
+       // MediaPlayer player = MediaPlayer.create(this, R.raw.theme1);
+      //  player.setLooping(true);
+      //  player.start();
 
         // Création bouton compte avec moi !
         final ImageButton compte = findViewById(R.id.imageButton);

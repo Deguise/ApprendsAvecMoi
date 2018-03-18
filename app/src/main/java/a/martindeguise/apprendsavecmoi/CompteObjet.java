@@ -37,7 +37,7 @@ public class CompteObjet extends AppCompatActivity{
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CompteObjet.this, Acceuil.class);
+                Intent intent = new Intent(CompteObjet.this, PopActivity.class);
                 startActivity(intent);
             }
         });

@@ -31,7 +31,7 @@ public class Addtion_trou extends AppCompatActivity{
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Addtion_trou.this, Acceuil.class);
+                Intent intent = new Intent(Addtion_trou.this, PopActivity.class);
                 startActivity(intent);
             }
         });

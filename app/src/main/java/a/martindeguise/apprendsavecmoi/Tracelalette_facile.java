@@ -23,7 +23,7 @@ public class Tracelalette_facile extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Tracelalette_facile.this, Acceuil.class);
+                Intent intent = new Intent(Tracelalette_facile.this, PopActivity.class);
                 startActivity(intent);
             }
         });

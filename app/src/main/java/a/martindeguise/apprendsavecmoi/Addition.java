@@ -30,7 +30,7 @@ public class Addition extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Addition.this, Acceuil.class);
+                Intent intent = new Intent(Addition.this, PopActivity.class);
                 startActivity(intent);
             }
         });
