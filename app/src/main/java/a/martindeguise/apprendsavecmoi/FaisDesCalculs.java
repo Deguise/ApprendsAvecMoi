@@ -13,24 +13,24 @@ public class FaisDesCalculs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_fais_des_calculs);
 
-        // Création bouton addtion
+        // Création bouton addition
         final ImageButton additionButton = findViewById(R.id.imageButton2);
         additionButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FaisDesCalculs.this, Addition.class);
+                Intent intent = new Intent(FaisDesCalculs.this, Consigne_addition.class);
                 startActivity(intent);
             }
         });
 
-        // Création bouton addtion a trou
+        // Création bouton addition a trou
         final ImageButton additionTrouButton = findViewById(R.id.imageButton);
         additionTrouButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FaisDesCalculs.this, Addtion_trou.class);
+                Intent intent = new Intent(FaisDesCalculs.this, Consigne_additionTrou.class);
                 startActivity(intent);
             }
         });

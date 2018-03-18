@@ -1,6 +1,7 @@
 package a.martindeguise.apprendsavecmoi;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -18,13 +19,16 @@ public class Consigne_Tracelettredifficile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_trace_lettre_consigne);
 
+        MediaPlayer player = MediaPlayer.create(this, R.raw.consignes_tracelettre);
+        player.start();
+
         //Création bouton validé
         final ImageButton validerButton = findViewById(R.id.imageButton);
         validerButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Consigne_Tracelettredifficile.this, Tracelalette_facile.class);
+                Intent intent = new Intent(Consigne_Tracelettredifficile.this, Tracelalettre_difficile.class);
                 startActivity(intent);
             }
         });

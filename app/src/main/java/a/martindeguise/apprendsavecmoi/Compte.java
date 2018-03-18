@@ -30,7 +30,7 @@ public class Compte extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Compte.this, CompteObjet.class);
+                Intent intent = new Intent(Compte.this, Consigne_CompteObjet.class);
                 startActivity(intent);
             }
         });

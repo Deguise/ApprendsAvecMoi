@@ -1,6 +1,7 @@
 package a.martindeguise.apprendsavecmoi;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -17,6 +18,9 @@ public class Consigne_Tracelettre extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_trace_lettre_consigne);
+
+        MediaPlayer player = MediaPlayer.create(this, R.raw.consignes_tracelettre);
+        player.start();
 
         //Création bouton validé
         final ImageButton validerButton = findViewById(R.id.imageButton);

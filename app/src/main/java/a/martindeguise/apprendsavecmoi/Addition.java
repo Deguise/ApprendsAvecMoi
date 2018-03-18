@@ -35,6 +35,7 @@ public class Addition extends AppCompatActivity {
             }
         });
 
+
         // Affichage de l'addition
         final String addition = genererAddition();
         TextView textView5 = findViewById(R.id.textView35);
