@@ -156,7 +156,7 @@ public class CompteObjet extends AppCompatActivity{
                 Intent intent = new Intent(CompteObjet.this, Resultat.class);
                 intent.putExtra(EXTRA_RESULTATUSER, editText.getText().toString());
                 intent.putExtra(EXTRA_RESULTAT, Integer.toString(resultat()));
-                String value = getNb1() + " pomme(s) + " + getNb2() + " pomme(s)";
+                String value = getNb1() + " pomme(s) + " + getNb2() + " pomme(s) + " + getNb3() + " pomme(s) =";
                 intent.putExtra(EXTRA_EQUATION, value);
                 startActivity(intent);
             }
@@ -181,7 +181,11 @@ public class CompteObjet extends AppCompatActivity{
         return nb2;
     }
 
+    public int getNb3() {
+        return nb3;
+    }
+
     public int resultat() {
-        return nb1 + nb2;
+        return nb1 + nb2 + nb3;
     }
 }
