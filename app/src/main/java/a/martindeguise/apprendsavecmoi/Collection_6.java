@@ -20,12 +20,12 @@ import android.widget.Toast;
  * Created by Leo on 10/03/2018.
  */
 
-public class Collection extends AppCompatActivity {
+public class Collection_6 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_collection);
+        setContentView(R.layout.layout_collection6);
 
 
         GridView gridView = findViewById(R.id.gridview);
@@ -35,7 +35,7 @@ public class Collection extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(Collection.this, "" +position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Collection_6.this, "" +position, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -46,7 +46,7 @@ public class Collection extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Collection.this, Acceuil.class);
+                Intent intent = new Intent(Collection_6.this, Acceuil.class);
                 startActivity(intent);
             }
         });
@@ -79,15 +79,16 @@ public class Collection extends AppCompatActivity {
 
 
         private Integer[] mThumbIds = {
-                R.drawable.trace_lettre_facile_camion,
-                R.drawable.trace_lettre_facile_bateau,
-                R.drawable.trace_lettre_facile_bus,
-                R.drawable.trace_lettre_facile_scooter,
-                R.drawable.trace_lettre_facile_helicoptere,
-                R.drawable.trace_lettre_facile_velo,
-                R.drawable.trace_lettre_facile_voiture,
-                R.drawable.trace_lettre_facile_avion,
-
+                R.drawable.fais_calculs_addition_trou_artichaud,
+                R.drawable.fais_calculs_addition_trou_aubergine,
+                R.drawable.fais_calculs_addition_trou_carotte,
+                R.drawable.fais_calculs_addition_trou_champignon,
+                R.drawable.fais_calculs_addition_trou_harricot,
+                R.drawable.fais_calculs_addition_trou_oignon,
+                R.drawable.fais_calculs_addition_trou_patate,
+                R.drawable.fais_calculs_addition_trou_tomate,
+                R.drawable.fais_calculs_addition_trou_radis,
+                R.drawable.fais_calculs_addition_trou_citrouille,
         };
 
 

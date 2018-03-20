@@ -84,10 +84,61 @@
             android:label="@string/app_name"
             android:screenOrientation="landscape" />
         <activity android:name=".PopActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape">
-
+        android:label="@string/app_name"
+        android:screenOrientation="landscape">
         </activity>
+        <activity
+            android:name=".Consigne_CompteObjet"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Consigne_addition"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Consigne_additionTrou"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Consigne_Tracelettre"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Consigne_Tracelettredifficile"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Choix_collection"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Collection_2"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Collection_3"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Collection_4"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Collection_5"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Collection_6"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Resultat_total"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Collection_resultat"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

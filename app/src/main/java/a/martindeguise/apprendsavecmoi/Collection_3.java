@@ -20,12 +20,12 @@ import android.widget.Toast;
  * Created by Leo on 10/03/2018.
  */
 
-public class Collection extends AppCompatActivity {
+public class Collection_3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_collection);
+        setContentView(R.layout.layout_collection3);
 
 
         GridView gridView = findViewById(R.id.gridview);
@@ -35,7 +35,7 @@ public class Collection extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(Collection.this, "" +position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Collection_3.this, "" +position, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -46,7 +46,7 @@ public class Collection extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Collection.this, Acceuil.class);
+                Intent intent = new Intent(Collection_3.this, Acceuil.class);
                 startActivity(intent);
             }
         });
@@ -79,15 +79,18 @@ public class Collection extends AppCompatActivity {
 
 
         private Integer[] mThumbIds = {
-                R.drawable.trace_lettre_facile_camion,
-                R.drawable.trace_lettre_facile_bateau,
-                R.drawable.trace_lettre_facile_bus,
-                R.drawable.trace_lettre_facile_scooter,
-                R.drawable.trace_lettre_facile_helicoptere,
-                R.drawable.trace_lettre_facile_velo,
-                R.drawable.trace_lettre_facile_voiture,
-                R.drawable.trace_lettre_facile_avion,
-
+                R.drawable.dictee_mot_parapluie,
+                R.drawable.dictee_mot_orage,
+                R.drawable.dictee_mot_pluie,
+                R.drawable.dictee_mot_arc_en_ciel,
+                R.drawable.dictee_mot_soleil,
+                R.drawable.dictee_mot_lune,
+                R.drawable.dictee_mot_planete_rouge,
+                R.drawable.dictee_mot_planete_bleu,
+                R.drawable.dictee_mot_planete_rayee,
+                R.drawable.dictee_mot_planete_anneau,
+                R.drawable.dictee_mot_planete_terre,
+                R.drawable.dictee_mot_fusee,
         };
 
 
