@@ -84,8 +84,8 @@ public class TraceLettreFacile extends AppCompatActivity
 		private Paint circlePaint;
 		private Path circlePath;
 
-		private int buttonX;
-		private int buttonY;
+		private int offsetArea;
+		private int buttonArea;
 
 
 		public DrawingView(Context c)
@@ -102,6 +102,9 @@ public class TraceLettreFacile extends AppCompatActivity
 			circlePaint.setStrokeJoin(Paint.Join.MITER);
 			circlePaint.setStrokeWidth(4f);
 
+
+			offsetArea = 500;
+			buttonArea = offsetArea;
 
 			Drawable d = getResources().getDrawable(R.drawable.maj_a);
 			d.setBounds(0, 0, 0, 0);
@@ -129,7 +132,9 @@ public class TraceLettreFacile extends AppCompatActivity
             int y = getHeight();
 
             // Position de l'image sur le canvas
-			canvas.drawBitmap( mBitmap, null, new RectF(50,50, x-500, y-50),  mBitmapPaint);
+			canvas.drawBitmap( mBitmap, null, new RectF(50,50, x-offsetArea, y-50),  mBitmapPaint);
+
+			buttonArea = x-offsetArea;
 
 			canvas.drawPath(mPath, mPaint);
 			canvas.drawPath(circlePath, circlePaint);
@@ -187,13 +192,24 @@ public class TraceLettreFacile extends AppCompatActivity
 
 			switch (event.getAction())
 			{
+				// TODO : quand on est dans la zone de droite, c'est un bouton vers la page de résultat
 				case MotionEvent.ACTION_DOWN:
-					touch_start(x, y);
+					if (x < buttonArea)
+					{
+						touch_start(x, y);
+					}
+					else
+					{
+						Intent intent = new Intent(TraceLettreFacile.this, TraceLettreResultat.class);
+						startActivity(intent);
+					}
 					invalidate();
 					break;
 				case MotionEvent.ACTION_MOVE:
-					touch_move(x, y);
-					invalidate();
+					if (x < buttonArea) {
+						touch_move(x, y);
+					}
+						invalidate();
 					break;
 				case MotionEvent.ACTION_UP:
 					touch_up();
