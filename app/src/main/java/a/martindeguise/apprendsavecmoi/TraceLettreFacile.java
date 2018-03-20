@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -29,7 +31,8 @@ public class TraceLettreFacile extends AppCompatActivity
 
 	DrawingView dv;
 	private Paint mPaint;
-
+	FrameLayout fl;
+	View view;
 	// View view = (View) findViewById(R.layout.layout_trace_lettre_facile);
 	// LinearLayout picLL = new LinearLayout(CurrentActivity.this);
 
@@ -45,10 +48,18 @@ public class TraceLettreFacile extends AppCompatActivity
 
 
 		super.onCreate(savedInstanceState);
-		//setContentView(R.layout.layout_trace_lettre_facile);
+		setContentView(R.layout.layout_trace_lettre_facile);
 
+		fl = new FrameLayout(this);
         dv = new DrawingView(this);
-		setContentView(new DrawingView(this));
+		view = new View(this);
+
+//		final ImageButton facileButton = findViewById(R.id.imageButton80);
+
+		fl.addView(dv);
+		fl.addView(view);
+        setContentView(fl);
+        //setContentView(new DrawingView(this));
 
 		mPaint = new Paint();
 		mPaint.setAntiAlias(true);
@@ -72,6 +83,10 @@ public class TraceLettreFacile extends AppCompatActivity
 		Context context;
 		private Paint circlePaint;
 		private Path circlePath;
+
+		private int buttonX;
+		private int buttonY;
+
 
 		public DrawingView(Context c)
 		{
@@ -113,7 +128,9 @@ public class TraceLettreFacile extends AppCompatActivity
             int x = getWidth();
             int y = getHeight();
 
-			canvas.drawBitmap( mBitmap, 0,0, mBitmapPaint);
+            // Position de l'image sur le canvas
+			canvas.drawBitmap( mBitmap, null, new RectF(50,50, x-500, y-50),  mBitmapPaint);
+
 			canvas.drawPath(mPath, mPaint);
 			canvas.drawPath(circlePath, circlePaint);
 
@@ -125,8 +142,11 @@ public class TraceLettreFacile extends AppCompatActivity
 
 		private void touch_start(float x, float y)
 		{
-			mPath.reset();
-			mPath.moveTo(x,y);
+
+            //  Décommenter pour que le path reset au toucher
+			//mPath.reset();
+
+            mPath.moveTo(x,y);
 			mX = x;
 			mY = y;
 		}
@@ -155,7 +175,7 @@ public class TraceLettreFacile extends AppCompatActivity
 			// Commit the path to our offscreen
 			mCanvas.drawPath(mPath, mPaint);
 
-			// kill this so we don't double draw
+			//  Décommenter pour que le path reset au toucher
 			//mPath.reset();
 		}
 
@@ -168,11 +188,11 @@ public class TraceLettreFacile extends AppCompatActivity
 			switch (event.getAction())
 			{
 				case MotionEvent.ACTION_DOWN:
-					touch_start(x,y);
+					touch_start(x, y);
 					invalidate();
 					break;
 				case MotionEvent.ACTION_MOVE:
-					touch_move(x,y);
+					touch_move(x, y);
 					invalidate();
 					break;
 				case MotionEvent.ACTION_UP:
