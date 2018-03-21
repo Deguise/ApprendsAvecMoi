@@ -1,17 +1,20 @@
 package a.martindeguise.apprendsavecmoi;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.OutputStreamWriter;
+
 
 /**
  * Created by martin on 12/01/2018.
@@ -27,6 +30,8 @@ public class Resultat extends AppCompatActivity{
     private String resultatUser = "";
     private String equation = "";
     private String reussit = "Non";
+
+    private String FILENAME = "score.txt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,8 +74,13 @@ public class Resultat extends AppCompatActivity{
             else{
                 textView8.setText("Pas bon");
             }
+
+            String content = "Equation: " + equation + "Resultat attendu: " + resultat + "Votre resultat: " + resultatUser + "L'exercice est reussit? " + reussit + "\n";
+
+            writeToFile("A:\\ApprendsAvecMoi\\app\\src\\main\\assets\\", "score.txt", content);
         }
     }
+
 
     public String getVraiResultat() {
         return resultat;
@@ -88,4 +98,29 @@ public class Resultat extends AppCompatActivity{
         return reussit;
     }
 
+    public boolean writeToFile(String directory, String filename, String data ) {
+        File out;
+        OutputStreamWriter outStreamWriter = null;
+        FileOutputStream outStream = null;
+
+        out = new File(new File(directory), filename);
+
+        try {
+
+            if (out.exists() == false) {
+                out.createNewFile();
+            }
+
+            outStream = new FileOutputStream(out, true);
+            outStreamWriter = new OutputStreamWriter(outStream);
+
+            outStreamWriter.append(data);
+            outStreamWriter.flush();
+        }
+        catch (IOException e) {
+            Log.e("Exception", "File write failed: " + e.toString());
+            return false;
+        }
+        return true;
+    }
 }
