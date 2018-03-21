@@ -72,13 +72,6 @@ public class DicteeDeMots extends AppCompatActivity {
             s[n].start();
         }
 
-
-        // Determiner la ligne du mot dans le dictionnaire
-        int i = (int)(Math.random() * 100000);
-        while(i > 336529){
-            i /= 2;
-        }
-
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(
@@ -89,7 +82,7 @@ public class DicteeDeMots extends AppCompatActivity {
             int compteur = 0;
             while ((mLine = reader.readLine()) != null) {
                 compteur++;
-                if(compteur == i){
+                if(compteur == n+1){
                     word = mLine;
                     break;
                }

@@ -1,0 +1,3 @@
+Score1:     7+1=    8   Vous avez reussit
+Score2:     3+?=8   5   Vous avez reussit
+Score3:     2 pomme(s) + 2 pomme(s) + 3 pomme(s)    6   Vous n'avez pas reussit
