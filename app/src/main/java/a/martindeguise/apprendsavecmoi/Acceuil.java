@@ -34,16 +34,6 @@ public class Acceuil extends AppCompatActivity {
             }
         });
 
-        // Création bouton Scores
-        final Button scores = findViewById(R.id.Scores);
-        scores.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Acceuil.this, Resultat_total.class);
-                startActivity(intent);
-            }
-        });
 
         // Création bouton ecris avec moi 
         final ImageButton compteObjetsButton= findViewById(R.id.imageButton2);
