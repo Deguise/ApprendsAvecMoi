@@ -42,14 +42,7 @@
         android:text="Ecris le mot suivant:"
         android:textSize="30sp" />
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Mot que l'enfant doit écrire"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/edittext22"
         android:layout_width="match_parent"

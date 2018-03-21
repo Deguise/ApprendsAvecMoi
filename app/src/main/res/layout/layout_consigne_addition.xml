@@ -71,7 +71,7 @@
             android:layout_centerHorizontal="true"
             android:background="@color/colorText"
             android:fontFamily="@font/rochester"
-            android:text=" Consignes :"
+            android:text=" Compte les pommes : "
             android:textSize="30sp" />
 
     </LinearLayout>

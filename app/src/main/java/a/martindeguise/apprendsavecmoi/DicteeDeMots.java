@@ -118,7 +118,7 @@ public class DicteeDeMots extends AppCompatActivity {
         });
 
         // Affichage du mot que l'enfant doit ecrire
-        TextView textView25 = findViewById(R.id.textView25);
+        TextView textView25 = new TextView(this);
         textView25.setText(word);
 
         final EditText resultat = findViewById(R.id.edittext22); // AJOUTER LA EDIT TEXT
