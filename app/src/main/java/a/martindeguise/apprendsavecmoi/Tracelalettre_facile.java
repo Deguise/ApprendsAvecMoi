@@ -31,6 +31,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
 
 import static java.lang.Boolean.FALSE;
 import static java.lang.Boolean.TRUE;
@@ -59,6 +60,11 @@ public class Tracelalettre_facile extends AppCompatActivity
     // dans les tableaux
     boolean tableResults[][] = new boolean[25][25];
     boolean tableUser[][] = new boolean[25][25];
+
+
+
+    String filepath="maj_A.txt";
+
 
     private static final String SAVE_FILE_PATH = "data/save";
 
@@ -147,6 +153,7 @@ public class Tracelalettre_facile extends AppCompatActivity
             offsetArea = 500;
             buttonArea = offsetArea;
 
+            mBitmap = BitmapFactory.decodeResource(getResources(),randomLetter());
             Drawable d = getResources().getDrawable(R.drawable.maj_z);
             d.setBounds(0, 0, 0, 0);
 
@@ -159,7 +166,9 @@ public class Tracelalettre_facile extends AppCompatActivity
             Resources res = getResources();
 
             // Nécessaire pour mettre l'image bitmap en arrière-plan du canvas
-            mBitmap = BitmapFactory.decodeResource(res, R.drawable.min_z);
+            //mBitmap = BitmapFactory.decodeResource(res, R.drawable.min_z);
+
+
 
             rescale(mBitmap);
             mCanvas = new Canvas (mBitmap.copy(Bitmap.Config.ARGB_8888, true));
@@ -320,7 +329,190 @@ public class Tracelalettre_facile extends AppCompatActivity
     }
 
 
-    // Calcul du score
+    /**
+     * Prend une lettre aléatoire
+     * et associe les .txt et
+     * image corerspondants.
+     */
+    public int randomLetter()
+    {
+        int randomNum = ThreadLocalRandom.current().nextInt(1, 26 + 1);
+        switch (randomNum) {
+            case 1:
+                filepath = "maj_a.txt";
+                return R.drawable.maj_a;
+            case 2:
+                filepath = "maj_b.txt";
+                return R.drawable.maj_b;
+            case 3:
+                filepath = "maj_c.txt";
+                return R.drawable.maj_c;
+            case 4:
+                filepath = "maj_d.txt";
+                return R.drawable.maj_d;
+            case 5:
+                filepath = "maj_e.txt";
+                return R.drawable.maj_e;
+            case 6:
+                filepath = "maj_f.txt";
+                return R.drawable.maj_f;
+            case 7:
+                filepath = "maj_g.txt";
+                return R.drawable.maj_g;
+            case 8:
+                filepath = "maj_h.txt";
+                return R.drawable.maj_h;
+            case 9:
+                filepath = "maj_i.txt";
+                return R.drawable.maj_i;
+            case 10:
+                filepath = "maj_j.txt";
+                return R.drawable.maj_j;
+            case 11:
+                filepath = "maj_k.txt";
+                return R.drawable.maj_k;
+            case 12:
+                filepath = "maj_l.txt";
+                return R.drawable.maj_l;
+            case 13:
+                filepath = "maj_m.txt";
+                return R.drawable.maj_m;
+            case 14:
+                filepath = "maj_n.txt";
+                return R.drawable.maj_n;
+            case 15:
+                filepath = "maj_o.txt";
+                return R.drawable.maj_o;
+            case 16:
+                filepath = "maj_p.txt";
+                return R.drawable.maj_p;
+            case 17:
+                filepath = "maj_q.txt";
+                return R.drawable.maj_q;
+            case 18:
+                filepath = "maj_r.txt";
+                return R.drawable.maj_r;
+            case 19:
+                filepath = "maj_s.txt";
+                return R.drawable.maj_s;
+            case 20:
+                filepath = "maj_t.txt";
+                return R.drawable.maj_t;
+            case 21:
+                filepath = "maj_u.txt";
+                return R.drawable.maj_u;
+            case 22:
+                filepath = "maj_v.txt";
+                return R.drawable.maj_v;
+            case 23:
+                filepath = "maj_w.txt";
+                return R.drawable.maj_w;
+            case 24:
+                filepath = "maj_x.txt";
+                return R.drawable.maj_x;
+            case 25:
+                filepath = "maj_y.txt";
+                return R.drawable.maj_y;
+            case 26:
+                filepath = "maj_z.txt";
+                return R.drawable.maj_z;
+
+
+            case 27:
+                filepath = "min_a.txt";
+                return R.drawable.min_a;
+            case 28:
+                filepath = "min_b.txt";
+                return R.drawable.min_b;
+            case 29:
+                filepath = "min_c.txt";
+                return R.drawable.min_c;
+            case 30:
+                filepath = "min_d.txt";
+                return R.drawable.min_d;
+            case 31:
+                filepath = "min_e.txt";
+                return R.drawable.min_e;
+            case 32:
+                filepath = "min_f.txt";
+                return R.drawable.min_f;
+            case 33:
+                filepath = "min_g.txt";
+                return R.drawable.min_g;
+            case 34:
+                filepath = "min_h.txt";
+                return R.drawable.min_h;
+            case 35:
+                filepath = "min_i.txt";
+                return R.drawable.min_i;
+            case 36:
+                filepath = "min_j.txt";
+                return R.drawable.min_j;
+            case 37:
+                filepath = "min_k.txt";
+                return R.drawable.min_k;
+            case 38:
+                filepath = "min_l.txt";
+                return R.drawable.min_l;
+            case 39:
+                filepath = "min_m.txt";
+                return R.drawable.min_m;
+            case 40:
+                filepath = "min_n.txt";
+                return R.drawable.min_n;
+            case 41:
+                filepath = "min_o.txt";
+                return R.drawable.min_o;
+            case 42:
+                filepath = "min_p.txt";
+                return R.drawable.min_p;
+            case 43:
+                filepath = "min_q.txt";
+                return R.drawable.min_q;
+            case 44:
+                filepath = "min_r.txt";
+                return R.drawable.min_r;
+            case 45:
+                filepath = "min_s.txt";
+                return R.drawable.min_s;
+            case 46:
+                filepath = "min_t.txt";
+                return R.drawable.min_t;
+            case 47:
+                filepath = "min_u.txt";
+                return R.drawable.min_u;
+            case 48:
+                filepath = "min_v.txt";
+                return R.drawable.min_v;
+            case 49:
+                filepath = "min_w.txt";
+                return R.drawable.min_w;
+            case 50:
+                filepath = "min_x.txt";
+                return R.drawable.min_x;
+            case 51:
+                filepath = "min_y.txt";
+                return R.drawable.min_y;
+            case 52:
+                filepath = "min_z.txt";
+                return R.drawable.min_z;
+            default:
+                filepath = "maj_a.txt";
+                return R.drawable.min_a;
+        }
+    }
+
+
+
+
+    /**
+     * Fonction qui calcule
+     * le score en fonction des cases
+     * touchées sur les cases de tableResults.
+     * @param tableUser
+     * @param tableResults
+     * @return le score sur 100.
+     */
     public float results(boolean tableUser[][], boolean tableResults[][])
     {
         int score=0;
@@ -362,7 +554,7 @@ public class Tracelalettre_facile extends AppCompatActivity
     {
 
         String ret = "";
-        String filepath="maj_A.txt";
+
 
 
         BufferedReader reader = null;
