@@ -89,451 +89,13 @@ public class Tracelalettre_facile extends AppCompatActivity
         System.out.print("\n------------------------------\n");
 
 
-        String test = readFromFile(this);
-
-        System.out.print(test);
-        System.out.print("\n------------------------------\n");
-
+        tableResults = readFromFile(this);
         // Mise en mémoire du tableau pour A
-
-        tableResults[ 2 ][ 18 ] = TRUE;
-        tableResults[ 2 ][ 18 ] = TRUE;
-        tableResults[ 1 ][ 18 ] = TRUE;
-        tableResults[ 1 ][ 19 ] = TRUE;
-        tableResults[ 1 ][ 19 ] = TRUE;
-        tableResults[ 1 ][ 19 ] = TRUE;
-        tableResults[ 1 ][ 19 ] = TRUE;
-        tableResults[ 2 ][ 19 ] = TRUE;
-        tableResults[ 2 ][ 19 ] = TRUE;
-        tableResults[ 2 ][ 19 ] = TRUE;
-        tableResults[ 2 ][ 19 ] = TRUE;
-        tableResults[ 2 ][ 19 ] = TRUE;
-        tableResults[ 2 ][ 20 ] = TRUE;
-        tableResults[ 3 ][ 20 ] = TRUE;
-        tableResults[ 3 ][ 20 ] = TRUE;
-        tableResults[ 3 ][ 20 ] = TRUE;
-        tableResults[ 3 ][ 20 ] = TRUE;
-        tableResults[ 3 ][ 20 ] = TRUE;
-        tableResults[ 3 ][ 20 ] = TRUE;
-        tableResults[ 4 ][ 20 ] = TRUE;
-        tableResults[ 4 ][ 20 ] = TRUE;
-        tableResults[ 4 ][ 20 ] = TRUE;
-        tableResults[ 4 ][ 20 ] = TRUE;
-        tableResults[ 4 ][ 20 ] = TRUE;
-        tableResults[ 5 ][ 20 ] = TRUE;
-        tableResults[ 5 ][ 20 ] = TRUE;
-        tableResults[ 5 ][ 20 ] = TRUE;
-        tableResults[ 5 ][ 20 ] = TRUE;
-        tableResults[ 5 ][ 20 ] = TRUE;
-        tableResults[ 6 ][ 20 ] = TRUE;
-        tableResults[ 6 ][ 19 ] = TRUE;
-        tableResults[ 6 ][ 19 ] = TRUE;
-        tableResults[ 6 ][ 19 ] = TRUE;
-        tableResults[ 6 ][ 19 ] = TRUE;
-        tableResults[ 6 ][ 19 ] = TRUE;
-        tableResults[ 7 ][ 19 ] = TRUE;
-        tableResults[ 7 ][ 19 ] = TRUE;
-        tableResults[ 7 ][ 19 ] = TRUE;
-        tableResults[ 7 ][ 18 ] = TRUE;
-        tableResults[ 7 ][ 18 ] = TRUE;
-        tableResults[ 7 ][ 18 ] = TRUE;
-        tableResults[ 7 ][ 18 ] = TRUE;
-        tableResults[ 7 ][ 18 ] = TRUE;
-        tableResults[ 7 ][ 18 ] = TRUE;
-        tableResults[ 7 ][ 18 ] = TRUE;
-        tableResults[ 7 ][ 18 ] = TRUE;
-        tableResults[ 7 ][ 17 ] = TRUE;
-        tableResults[ 7 ][ 17 ] = TRUE;
-        tableResults[ 8 ][ 17 ] = TRUE;
-        tableResults[ 8 ][ 17 ] = TRUE;
-        tableResults[ 8 ][ 17 ] = TRUE;
-        tableResults[ 8 ][ 17 ] = TRUE;
-        tableResults[ 8 ][ 16 ] = TRUE;
-        tableResults[ 8 ][ 16 ] = TRUE;
-        tableResults[ 8 ][ 16 ] = TRUE;
-        tableResults[ 8 ][ 16 ] = TRUE;
-        tableResults[ 8 ][ 16 ] = TRUE;
-        tableResults[ 8 ][ 16 ] = TRUE;
-        tableResults[ 8 ][ 15 ] = TRUE;
-        tableResults[ 8 ][ 15 ] = TRUE;
-        tableResults[ 8 ][ 15 ] = TRUE;
-        tableResults[ 8 ][ 15 ] = TRUE;
-        tableResults[ 8 ][ 15 ] = TRUE;
-        tableResults[ 8 ][ 15 ] = TRUE;
-        tableResults[ 8 ][ 14 ] = TRUE;
-        tableResults[ 8 ][ 14 ] = TRUE;
-        tableResults[ 8 ][ 14 ] = TRUE;
-        tableResults[ 8 ][ 14 ] = TRUE;
-        tableResults[ 8 ][ 14 ] = TRUE;
-        tableResults[ 8 ][ 14 ] = TRUE;
-        tableResults[ 8 ][ 13 ] = TRUE;
-        tableResults[ 8 ][ 13 ] = TRUE;
-        tableResults[ 9 ][ 13 ] = TRUE;
-        tableResults[ 9 ][ 13 ] = TRUE;
-        tableResults[ 9 ][ 12 ] = TRUE;
-        tableResults[ 9 ][ 12 ] = TRUE;
-        tableResults[ 9 ][ 12 ] = TRUE;
-        tableResults[ 9 ][ 12 ] = TRUE;
-        tableResults[ 9 ][ 12 ] = TRUE;
-        tableResults[ 9 ][ 12 ] = TRUE;
-        tableResults[ 9 ][ 11 ] = TRUE;
-        tableResults[ 9 ][ 11 ] = TRUE;
-        tableResults[ 9 ][ 11 ] = TRUE;
-        tableResults[ 9 ][ 11 ] = TRUE;
-        tableResults[ 9 ][ 11 ] = TRUE;
-        tableResults[ 9 ][ 11 ] = TRUE;
-        tableResults[ 9 ][ 11 ] = TRUE;
-        tableResults[ 9 ][ 10 ] = TRUE;
-        tableResults[ 9 ][ 10 ] = TRUE;
-        tableResults[ 9 ][ 10 ] = TRUE;
-        tableResults[ 9 ][ 10 ] = TRUE;
-        tableResults[ 9 ][ 9 ] = TRUE;
-        tableResults[ 9 ][ 9 ] = TRUE;
-        tableResults[ 9 ][ 9 ] = TRUE;
-        tableResults[ 9 ][ 9 ] = TRUE;
-        tableResults[ 9 ][ 9 ] = TRUE;
-        tableResults[ 9 ][ 9 ] = TRUE;
-        tableResults[ 9 ][ 8 ] = TRUE;
-        tableResults[ 9 ][ 8 ] = TRUE;
-        tableResults[ 9 ][ 8 ] = TRUE;
-        tableResults[ 9 ][ 8 ] = TRUE;
-        tableResults[ 9 ][ 8 ] = TRUE;
-        tableResults[ 9 ][ 8 ] = TRUE;
-        tableResults[ 9 ][ 7 ] = TRUE;
-        tableResults[ 9 ][ 7 ] = TRUE;
-        tableResults[ 9 ][ 7 ] = TRUE;
-        tableResults[ 9 ][ 7 ] = TRUE;
-        tableResults[ 10 ][ 6 ] = TRUE;
-        tableResults[ 10 ][ 6 ] = TRUE;
-        tableResults[ 10 ][ 6 ] = TRUE;
-        tableResults[ 10 ][ 6 ] = TRUE;
-        tableResults[ 10 ][ 6 ] = TRUE;
-        tableResults[ 10 ][ 5 ] = TRUE;
-        tableResults[ 10 ][ 5 ] = TRUE;
-        tableResults[ 10 ][ 5 ] = TRUE;
-        tableResults[ 10 ][ 4 ] = TRUE;
-        tableResults[ 10 ][ 4 ] = TRUE;
-        tableResults[ 10 ][ 4 ] = TRUE;
-        tableResults[ 10 ][ 4 ] = TRUE;
-        tableResults[ 10 ][ 4 ] = TRUE;
-        tableResults[ 10 ][ 4 ] = TRUE;
-        tableResults[ 10 ][ 3 ] = TRUE;
-        tableResults[ 10 ][ 3 ] = TRUE;
-        tableResults[ 10 ][ 3 ] = TRUE;
-        tableResults[ 10 ][ 3 ] = TRUE;
-        tableResults[ 10 ][ 3 ] = TRUE;
-        tableResults[ 10 ][ 3 ] = TRUE;
-        tableResults[ 11 ][ 2 ] = TRUE;
-        tableResults[ 11 ][ 1 ] = TRUE;
-        tableResults[ 11 ][ 1 ] = TRUE;
-        tableResults[ 11 ][ 0 ] = TRUE;
-        tableResults[ 11 ][ 0 ] = TRUE;
-        tableResults[ 11 ][ 0 ] = TRUE;
-        tableResults[ 11 ][ 1 ] = TRUE;
-        tableResults[ 12 ][ 1 ] = TRUE;
-        tableResults[ 12 ][ 1 ] = TRUE;
-        tableResults[ 12 ][ 1 ] = TRUE;
-        tableResults[ 12 ][ 1 ] = TRUE;
-        tableResults[ 12 ][ 1 ] = TRUE;
-        tableResults[ 12 ][ 1 ] = TRUE;
-        tableResults[ 12 ][ 2 ] = TRUE;
-        tableResults[ 12 ][ 2 ] = TRUE;
-        tableResults[ 12 ][ 2 ] = TRUE;
-        tableResults[ 12 ][ 2 ] = TRUE;
-        tableResults[ 12 ][ 2 ] = TRUE;
-        tableResults[ 12 ][ 2 ] = TRUE;
-        tableResults[ 12 ][ 3 ] = TRUE;
-        tableResults[ 12 ][ 3 ] = TRUE;
-        tableResults[ 12 ][ 3 ] = TRUE;
-        tableResults[ 12 ][ 3 ] = TRUE;
-        tableResults[ 12 ][ 3 ] = TRUE;
-        tableResults[ 12 ][ 3 ] = TRUE;
-        tableResults[ 12 ][ 4 ] = TRUE;
-        tableResults[ 12 ][ 4 ] = TRUE;
-        tableResults[ 12 ][ 4 ] = TRUE;
-        tableResults[ 12 ][ 4 ] = TRUE;
-        tableResults[ 12 ][ 4 ] = TRUE;
-        tableResults[ 12 ][ 4 ] = TRUE;
-        tableResults[ 12 ][ 5 ] = TRUE;
-        tableResults[ 12 ][ 5 ] = TRUE;
-        tableResults[ 12 ][ 5 ] = TRUE;
-        tableResults[ 12 ][ 5 ] = TRUE;
-        tableResults[ 12 ][ 5 ] = TRUE;
-        tableResults[ 12 ][ 6 ] = TRUE;
-        tableResults[ 12 ][ 6 ] = TRUE;
-        tableResults[ 12 ][ 6 ] = TRUE;
-        tableResults[ 12 ][ 6 ] = TRUE;
-        tableResults[ 12 ][ 7 ] = TRUE;
-        tableResults[ 12 ][ 7 ] = TRUE;
-        tableResults[ 12 ][ 7 ] = TRUE;
-        tableResults[ 12 ][ 7 ] = TRUE;
-        tableResults[ 12 ][ 7 ] = TRUE;
-        tableResults[ 12 ][ 7 ] = TRUE;
-        tableResults[ 12 ][ 8 ] = TRUE;
-        tableResults[ 12 ][ 8 ] = TRUE;
-        tableResults[ 12 ][ 8 ] = TRUE;
-        tableResults[ 12 ][ 8 ] = TRUE;
-        tableResults[ 12 ][ 8 ] = TRUE;
-        tableResults[ 12 ][ 9 ] = TRUE;
-        tableResults[ 12 ][ 9 ] = TRUE;
-        tableResults[ 12 ][ 9 ] = TRUE;
-        tableResults[ 12 ][ 9 ] = TRUE;
-        tableResults[ 12 ][ 9 ] = TRUE;
-        tableResults[ 12 ][ 9 ] = TRUE;
-        tableResults[ 12 ][ 10 ] = TRUE;
-        tableResults[ 12 ][ 10 ] = TRUE;
-        tableResults[ 12 ][ 10 ] = TRUE;
-        tableResults[ 12 ][ 10 ] = TRUE;
-        tableResults[ 12 ][ 10 ] = TRUE;
-        tableResults[ 12 ][ 11 ] = TRUE;
-        tableResults[ 13 ][ 11 ] = TRUE;
-        tableResults[ 13 ][ 11 ] = TRUE;
-        tableResults[ 13 ][ 11 ] = TRUE;
-        tableResults[ 13 ][ 11 ] = TRUE;
-        tableResults[ 13 ][ 12 ] = TRUE;
-        tableResults[ 13 ][ 12 ] = TRUE;
-        tableResults[ 13 ][ 12 ] = TRUE;
-        tableResults[ 13 ][ 12 ] = TRUE;
-        tableResults[ 13 ][ 12 ] = TRUE;
-        tableResults[ 13 ][ 12 ] = TRUE;
-        tableResults[ 13 ][ 13 ] = TRUE;
-        tableResults[ 13 ][ 13 ] = TRUE;
-        tableResults[ 13 ][ 13 ] = TRUE;
-        tableResults[ 13 ][ 13 ] = TRUE;
-        tableResults[ 13 ][ 13 ] = TRUE;
-        tableResults[ 13 ][ 13 ] = TRUE;
-        tableResults[ 13 ][ 14 ] = TRUE;
-        tableResults[ 13 ][ 14 ] = TRUE;
-        tableResults[ 13 ][ 14 ] = TRUE;
-        tableResults[ 13 ][ 14 ] = TRUE;
-        tableResults[ 13 ][ 14 ] = TRUE;
-        tableResults[ 13 ][ 15 ] = TRUE;
-        tableResults[ 13 ][ 15 ] = TRUE;
-        tableResults[ 13 ][ 15 ] = TRUE;
-        tableResults[ 13 ][ 15 ] = TRUE;
-        tableResults[ 13 ][ 15 ] = TRUE;
-        tableResults[ 13 ][ 16 ] = TRUE;
-        tableResults[ 13 ][ 16 ] = TRUE;
-        tableResults[ 13 ][ 16 ] = TRUE;
-        tableResults[ 13 ][ 16 ] = TRUE;
-        tableResults[ 13 ][ 16 ] = TRUE;
-        tableResults[ 13 ][ 16 ] = TRUE;
-        tableResults[ 13 ][ 17 ] = TRUE;
-        tableResults[ 13 ][ 17 ] = TRUE;
-        tableResults[ 13 ][ 17 ] = TRUE;
-        tableResults[ 13 ][ 17 ] = TRUE;
-        tableResults[ 13 ][ 17 ] = TRUE;
-        tableResults[ 13 ][ 17 ] = TRUE;
-        tableResults[ 13 ][ 18 ] = TRUE;
-        tableResults[ 14 ][ 18 ] = TRUE;
-        tableResults[ 14 ][ 18 ] = TRUE;
-        tableResults[ 14 ][ 19 ] = TRUE;
-        tableResults[ 14 ][ 19 ] = TRUE;
-        tableResults[ 14 ][ 19 ] = TRUE;
-        tableResults[ 15 ][ 19 ] = TRUE;
-        tableResults[ 15 ][ 19 ] = TRUE;
-        tableResults[ 15 ][ 19 ] = TRUE;
-        tableResults[ 16 ][ 19 ] = TRUE;
-        tableResults[ 16 ][ 19 ] = TRUE;
-        tableResults[ 16 ][ 19 ] = TRUE;
-        tableResults[ 17 ][ 19 ] = TRUE;
-        tableResults[ 17 ][ 20 ] = TRUE;
-        tableResults[ 18 ][ 20 ] = TRUE;
-        tableResults[ 18 ][ 20 ] = TRUE;
-        tableResults[ 18 ][ 20 ] = TRUE;
-        tableResults[ 18 ][ 20 ] = TRUE;
-        tableResults[ 18 ][ 20 ] = TRUE;
-        tableResults[ 18 ][ 20 ] = TRUE;
-        tableResults[ 19 ][ 20 ] = TRUE;
-        tableResults[ 19 ][ 20 ] = TRUE;
-        tableResults[ 19 ][ 20 ] = TRUE;
-        tableResults[ 19 ][ 20 ] = TRUE;
-        tableResults[ 19 ][ 20 ] = TRUE;
-        tableResults[ 20 ][ 20 ] = TRUE;
-        tableResults[ 20 ][ 19 ] = TRUE;
-        tableResults[ 20 ][ 19 ] = TRUE;
-        tableResults[ 20 ][ 19 ] = TRUE;
-        tableResults[ 20 ][ 19 ] = TRUE;
-        tableResults[ 20 ][ 19 ] = TRUE;
-        tableResults[ 20 ][ 19 ] = TRUE;
-        tableResults[ 20 ][ 19 ] = TRUE;
-        tableResults[ 21 ][ 19 ] = TRUE;
-        tableResults[ 21 ][ 19 ] = TRUE;
-        tableResults[ 21 ][ 19 ] = TRUE;
-        tableResults[ 21 ][ 18 ] = TRUE;
-        tableResults[ 21 ][ 18 ] = TRUE;
-        tableResults[ 21 ][ 18 ] = TRUE;
-        tableResults[ 21 ][ 18 ] = TRUE;
-        tableResults[ 21 ][ 18 ] = TRUE;
-        tableResults[ 21 ][ 17 ] = TRUE;
-        tableResults[ 22 ][ 17 ] = TRUE;
-        tableResults[ 22 ][ 17 ] = TRUE;
-        tableResults[ 22 ][ 17 ] = TRUE;
-        tableResults[ 22 ][ 17 ] = TRUE;
-        tableResults[ 22 ][ 17 ] = TRUE;
-        tableResults[ 22 ][ 17 ] = TRUE;
-        tableResults[ 22 ][ 16 ] = TRUE;
-        tableResults[ 22 ][ 16 ] = TRUE;
-        tableResults[ 22 ][ 16 ] = TRUE;
-        tableResults[ 22 ][ 16 ] = TRUE;
-        tableResults[ 22 ][ 16 ] = TRUE;
-        tableResults[ 22 ][ 15 ] = TRUE;
-        tableResults[ 22 ][ 15 ] = TRUE;
-        tableResults[ 22 ][ 15 ] = TRUE;
-        tableResults[ 22 ][ 15 ] = TRUE;
-        tableResults[ 22 ][ 15 ] = TRUE;
-        tableResults[ 22 ][ 15 ] = TRUE;
-        tableResults[ 22 ][ 15 ] = TRUE;
-        tableResults[ 22 ][ 14 ] = TRUE;
-        tableResults[ 22 ][ 14 ] = TRUE;
-        tableResults[ 22 ][ 14 ] = TRUE;
-        tableResults[ 22 ][ 14 ] = TRUE;
-        tableResults[ 21 ][ 14 ] = TRUE;
-        tableResults[ 21 ][ 14 ] = TRUE;
-        tableResults[ 21 ][ 13 ] = TRUE;
-        tableResults[ 21 ][ 13 ] = TRUE;
-        tableResults[ 21 ][ 13 ] = TRUE;
-        tableResults[ 21 ][ 13 ] = TRUE;
-        tableResults[ 21 ][ 13 ] = TRUE;
-        tableResults[ 21 ][ 13 ] = TRUE;
-        tableResults[ 20 ][ 13 ] = TRUE;
-        tableResults[ 20 ][ 12 ] = TRUE;
-        tableResults[ 20 ][ 12 ] = TRUE;
-        tableResults[ 20 ][ 12 ] = TRUE;
-        tableResults[ 20 ][ 12 ] = TRUE;
-        tableResults[ 20 ][ 12 ] = TRUE;
-        tableResults[ 19 ][ 12 ] = TRUE;
-        tableResults[ 19 ][ 12 ] = TRUE;
-        tableResults[ 19 ][ 12 ] = TRUE;
-        tableResults[ 19 ][ 12 ] = TRUE;
-        tableResults[ 19 ][ 12 ] = TRUE;
-        tableResults[ 19 ][ 12 ] = TRUE;
-        tableResults[ 18 ][ 12 ] = TRUE;
-        tableResults[ 18 ][ 12 ] = TRUE;
-        tableResults[ 18 ][ 12 ] = TRUE;
-        tableResults[ 18 ][ 12 ] = TRUE;
-        tableResults[ 18 ][ 12 ] = TRUE;
-        tableResults[ 18 ][ 12 ] = TRUE;
-        tableResults[ 17 ][ 12 ] = TRUE;
-        tableResults[ 17 ][ 13 ] = TRUE;
-        tableResults[ 17 ][ 13 ] = TRUE;
-        tableResults[ 17 ][ 13 ] = TRUE;
-        tableResults[ 17 ][ 13 ] = TRUE;
-        tableResults[ 17 ][ 13 ] = TRUE;
-        tableResults[ 17 ][ 14 ] = TRUE;
-        tableResults[ 17 ][ 14 ] = TRUE;
-        tableResults[ 17 ][ 14 ] = TRUE;
-        tableResults[ 17 ][ 14 ] = TRUE;
-        tableResults[ 17 ][ 14 ] = TRUE;
-        tableResults[ 17 ][ 14 ] = TRUE;
-        tableResults[ 17 ][ 15 ] = TRUE;
-        tableResults[ 17 ][ 15 ] = TRUE;
-        tableResults[ 16 ][ 15 ] = TRUE;
-        tableResults[ 16 ][ 15 ] = TRUE;
-        tableResults[ 16 ][ 15 ] = TRUE;
-        tableResults[ 16 ][ 16 ] = TRUE;
-        tableResults[ 16 ][ 16 ] = TRUE;
-        tableResults[ 16 ][ 16 ] = TRUE;
-        tableResults[ 16 ][ 16 ] = TRUE;
-        tableResults[ 16 ][ 16 ] = TRUE;
-        tableResults[ 16 ][ 16 ] = TRUE;
-        tableResults[ 3 ][ 12 ] = TRUE;
-        tableResults[ 3 ][ 12 ] = TRUE;
-        tableResults[ 3 ][ 12 ] = TRUE;
-        tableResults[ 4 ][ 12 ] = TRUE;
-        tableResults[ 4 ][ 12 ] = TRUE;
-        tableResults[ 4 ][ 11 ] = TRUE;
-        tableResults[ 4 ][ 11 ] = TRUE;
-        tableResults[ 5 ][ 11 ] = TRUE;
-        tableResults[ 5 ][ 11 ] = TRUE;
-        tableResults[ 5 ][ 11 ] = TRUE;
-        tableResults[ 5 ][ 11 ] = TRUE;
-        tableResults[ 5 ][ 11 ] = TRUE;
-        tableResults[ 6 ][ 11 ] = TRUE;
-        tableResults[ 6 ][ 11 ] = TRUE;
-        tableResults[ 6 ][ 11 ] = TRUE;
-        tableResults[ 6 ][ 11 ] = TRUE;
-        tableResults[ 7 ][ 11 ] = TRUE;
-        tableResults[ 7 ][ 11 ] = TRUE;
-        tableResults[ 7 ][ 11 ] = TRUE;
-        tableResults[ 8 ][ 11 ] = TRUE;
-        tableResults[ 8 ][ 11 ] = TRUE;
-        tableResults[ 8 ][ 11 ] = TRUE;
-        tableResults[ 8 ][ 11 ] = TRUE;
-        tableResults[ 8 ][ 11 ] = TRUE;
-        tableResults[ 9 ][ 11 ] = TRUE;
-        tableResults[ 9 ][ 11 ] = TRUE;
-        tableResults[ 9 ][ 11 ] = TRUE;
-        tableResults[ 9 ][ 11 ] = TRUE;
-        tableResults[ 9 ][ 11 ] = TRUE;
-        tableResults[ 10 ][ 11 ] = TRUE;
-        tableResults[ 10 ][ 11 ] = TRUE;
-        tableResults[ 10 ][ 11 ] = TRUE;
-        tableResults[ 10 ][ 11 ] = TRUE;
-        tableResults[ 10 ][ 11 ] = TRUE;
-        tableResults[ 11 ][ 11 ] = TRUE;
-        tableResults[ 11 ][ 11 ] = TRUE;
-        tableResults[ 11 ][ 11 ] = TRUE;
-        tableResults[ 11 ][ 11 ] = TRUE;
-        tableResults[ 11 ][ 11 ] = TRUE;
-        tableResults[ 12 ][ 11 ] = TRUE;
-        tableResults[ 12 ][ 11 ] = TRUE;
-        tableResults[ 12 ][ 11 ] = TRUE;
-        tableResults[ 13 ][ 11 ] = TRUE;
-        tableResults[ 13 ][ 11 ] = TRUE;
-        tableResults[ 13 ][ 11 ] = TRUE;
-        tableResults[ 14 ][ 11 ] = TRUE;
-        tableResults[ 14 ][ 11 ] = TRUE;
-        tableResults[ 14 ][ 11 ] = TRUE;
-        tableResults[ 15 ][ 11 ] = TRUE;
-        tableResults[ 15 ][ 11 ] = TRUE;
-        tableResults[ 15 ][ 11 ] = TRUE;
-        tableResults[ 15 ][ 11 ] = TRUE;
-        tableResults[ 16 ][ 11 ] = TRUE;
-        tableResults[ 16 ][ 11 ] = TRUE;
-        tableResults[ 17 ][ 11 ] = TRUE;
-        tableResults[ 19 ][ 11 ] = TRUE;
-        tableResults[ 19 ][ 11 ] = TRUE;
-        tableResults[ 19 ][ 11 ] = TRUE;
-        tableResults[ 19 ][ 11 ] = TRUE;
-        tableResults[ 19 ][ 11 ] = TRUE;
-        tableResults[ 19 ][ 10 ] = TRUE;
-        tableResults[ 19 ][ 10 ] = TRUE;
-        tableResults[ 19 ][ 10 ] = TRUE;
-        tableResults[ 20 ][ 10 ] = TRUE;
-        tableResults[ 20 ][ 10 ] = TRUE;
-        tableResults[ 20 ][ 10 ] = TRUE;
-        tableResults[ 19 ][ 10 ] = TRUE;
-        tableResults[ 19 ][ 10 ] = TRUE;
-        tableResults[ 19 ][ 10 ] = TRUE;
-        tableResults[ 19 ][ 10 ] = TRUE;
-        tableResults[ 19 ][ 10 ] = TRUE;
-        tableResults[ 18 ][ 10 ] = TRUE;
-        tableResults[ 18 ][ 10 ] = TRUE;
-        tableResults[ 18 ][ 10 ] = TRUE;
-        tableResults[ 18 ][ 10 ] = TRUE;
-        tableResults[ 18 ][ 10 ] = TRUE;
-        tableResults[ 18 ][ 11 ] = TRUE;
-        tableResults[ 17 ][ 11 ] = TRUE;
-        tableResults[ 17 ][ 11 ] = TRUE;
-        tableResults[ 17 ][ 11 ] = TRUE;
-        tableResults[ 17 ][ 11 ] = TRUE;
-        tableResults[ 17 ][ 11 ] = TRUE;
-
-
-
-        /////////////////////////////////////////////////////
-
-
-
-
-
-
-
 
 
         System.out.println("compter à partir de là");
 //		final ImageButton facileButton = findViewById(R.id.imageButton80);
+
 
         fl.addView(dv);
         fl.addView(view);
@@ -585,7 +147,7 @@ public class Tracelalettre_facile extends AppCompatActivity
             offsetArea = 500;
             buttonArea = offsetArea;
 
-            Drawable d = getResources().getDrawable(R.drawable.maj_a);
+            Drawable d = getResources().getDrawable(R.drawable.maj_z);
             d.setBounds(0, 0, 0, 0);
 
         }
@@ -597,9 +159,9 @@ public class Tracelalettre_facile extends AppCompatActivity
             Resources res = getResources();
 
             // Nécessaire pour mettre l'image bitmap en arrière-plan du canvas
-            mBitmap = BitmapFactory.decodeResource(res, R.drawable.maj_a);
+            mBitmap = BitmapFactory.decodeResource(res, R.drawable.min_z);
 
-            rescale(BitmapFactory.decodeResource(getResources(), R.drawable.maj_a));
+            rescale(mBitmap);
             mCanvas = new Canvas (mBitmap.copy(Bitmap.Config.ARGB_8888, true));
         }
 
@@ -645,6 +207,9 @@ public class Tracelalettre_facile extends AppCompatActivity
                 {
                     caseY = 0;
                 }
+
+
+                System.out.print(caseX+"-"+caseY+"\n");
                 tableUser[caseX][caseY]=TRUE;
             }
             else
@@ -682,6 +247,8 @@ public class Tracelalettre_facile extends AppCompatActivity
                 }
 
                 tableUser[caseX][caseY]=TRUE;
+
+                //System.out.print(caseX+"-"+caseY+"\n");
 
                 circlePath.reset();
                 circlePath.addCircle(mX,mY, 30, Path.Direction.CW);
@@ -783,63 +350,56 @@ public class Tracelalettre_facile extends AppCompatActivity
         return score;
     }
 
-/*	public void loadData() throws FileNotFoundException {
-		File file = new File(SAVE_FILE_PATH);
-
-		Scanner scanner;
-
-		if (file.exists())
-		{
-			scanner = new Scanner(new FileInputStream(file));
-			try
-			{
-				while (scanner.hasNextLine())
-				{
-					allPlayers.add(new Player(scanner.nextLine()));
-				}
-			}
-			finally
-			{
-				scanner.close();
-			}
-		}
-		else
-		{
-			System.out.println("No file found");
-		}
-	}*/
-
-    private String readFromFile(Context context)
+    /**
+     * A method that
+     * reads a file and
+     * fills tableResults[][]
+     * according to it
+     * @param context
+     * @return table of blacked pixels
+     */
+    private boolean[][] readFromFile(Context context)
     {
 
         String ret = "";
+        String filepath="maj_A.txt";
 
+
+        BufferedReader reader = null;
         try {
-            InputStream inputStream = context.openFileInput("maj_A.txt");
+            reader = new BufferedReader(
+                    new InputStreamReader(getAssets().open(filepath)));
 
-            if ( inputStream != null )
+            // do reading, usually loop until end of file reading
+            String mLine;
+            int compteur = 0;
+            int case1 =0;
+            int case2=0;
+            while ((mLine = reader.readLine()) != null)
             {
-                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-                String receiveString = "";
-                StringBuilder stringBuilder = new StringBuilder();
+                if (reader.readLine()!=null) {
+                    String[] parts = reader.readLine().split("-");
+                    case1 = Integer.parseInt(parts[0]);
+                    case2 = Integer.parseInt(parts[1]);
 
-                while ( (receiveString = bufferedReader.readLine()) != null )
-                {
-                    stringBuilder.append(receiveString);
+                    tableResults[case1][case2] = TRUE;
                 }
+            }
+        } catch (IOException e) {
 
-                inputStream.close();
-                ret = stringBuilder.toString();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                }        catch (FileNotFoundException e) {
+                    Log.e("login activity", "File not found: " + e.toString());
+                } catch (IOException e) {
+                    Log.e("login activity", "Can not read file: " + e.toString());
+                }
             }
         }
-        catch (FileNotFoundException e) {
-            Log.e("login activity", "File not found: " + e.toString());
-        } catch (IOException e) {
-            Log.e("login activity", "Can not read file: " + e.toString());
-        }
 
-        return ret;
+        return tableUser;
     }
 }
 
