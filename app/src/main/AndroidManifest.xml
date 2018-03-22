@@ -80,7 +80,11 @@
             android:label="@string/app_name"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".Tracelalette_facile"
+            android:name=".Tracelalettre_facile"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".TraceLettreResultat"
             android:label="@string/app_name"
             android:screenOrientation="landscape" />
         <activity android:name=".PopActivity"
