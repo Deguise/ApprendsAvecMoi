@@ -64,6 +64,7 @@ public class Tracelalettre_facile extends AppCompatActivity
 
 
     String filepath="maj_A.txt";
+    int darkPixels;
 
 
     private static final String SAVE_FILE_PATH = "data/save";
@@ -92,14 +93,12 @@ public class Tracelalettre_facile extends AppCompatActivity
                 tableResults[i][j] = FALSE;
             }
         }
-        System.out.print("\n------------------------------\n");
 
 
+        darkPixels=0;
         tableResults = readFromFile(this);
         // Mise en mémoire du tableau pour A
 
-
-        System.out.println("compter à partir de là");
 //		final ImageButton facileButton = findViewById(R.id.imageButton80);
 
 
@@ -218,14 +217,15 @@ public class Tracelalettre_facile extends AppCompatActivity
                 }
 
 
-                System.out.print(caseX+"-"+caseY+"\n");
+                //System.out.print(caseX+"-"+caseY+"\n");
                 tableUser[caseX][caseY]=TRUE;
             }
             else
             {
-                results(tableUser,tableResults);
 
+                int score = (int)results(tableUser,tableResults);
                 Intent i = new Intent(getApplicationContext(), TraceLettreResultat.class);
+                i.putExtra("SCORE", score);
                 startActivity(i);
             }
 
@@ -269,7 +269,6 @@ public class Tracelalettre_facile extends AppCompatActivity
             mPath.lineTo(mX,mY);
             circlePath.reset();
 
-            // Commit the path to our offscreen
             mCanvas.drawPath(mPath, mPaint);
 
             //  Décommenter pour que le path reset au toucher
@@ -336,7 +335,7 @@ public class Tracelalettre_facile extends AppCompatActivity
      */
     public int randomLetter()
     {
-        int randomNum = ThreadLocalRandom.current().nextInt(1, 26 + 1);
+        int randomNum = ThreadLocalRandom.current().nextInt(1, 52 + 1);
         switch (randomNum) {
             case 1:
                 filepath = "maj_a.txt";
@@ -538,7 +537,13 @@ public class Tracelalettre_facile extends AppCompatActivity
         {
             score=0;
         }
-        System.out.print("\n"+score+"\n");
+
+        if (darkPixels!=0)
+        {
+            score=score/darkPixels;
+        }
+
+       // System.out.print("\n"+score+"\n");
         return score;
     }
 
@@ -555,7 +560,9 @@ public class Tracelalettre_facile extends AppCompatActivity
 
         String ret = "";
 
-
+        //////////////////////////////////////////////////////
+        //System.out.print("\n\n"+filepath+"\n\n");
+        //////////////////////////////////////////////////
 
         BufferedReader reader = null;
         try {
@@ -567,12 +574,16 @@ public class Tracelalettre_facile extends AppCompatActivity
             int compteur = 0;
             int case1 =0;
             int case2=0;
+            darkPixels=0;
             while ((mLine = reader.readLine()) != null)
             {
-                if (reader.readLine()!=null) {
-                    String[] parts = reader.readLine().split("-");
+                String line = reader.readLine();
+
+                if (line!=null) {
+                    String[] parts = line.split("-");
                     case1 = Integer.parseInt(parts[0]);
                     case2 = Integer.parseInt(parts[1]);
+                    darkPixels++;
 
                     tableResults[case1][case2] = TRUE;
                 }
