@@ -58,8 +58,8 @@ public class Tracelalettre_facile extends AppCompatActivity
     // On prend des tableaux de 100*100 cases pour avoir de la marge.
     // On prend toujours x+10 et y+10 pour ne pas avoir de valeurs negatives
     // dans les tableaux
-    boolean tableResults[][] = new boolean[25][25];
-    boolean tableUser[][] = new boolean[25][25];
+    boolean tableResults[][] = new boolean[50][50];
+    boolean tableUser[][] = new boolean[50][50];
 
 
 
@@ -153,7 +153,7 @@ public class Tracelalettre_facile extends AppCompatActivity
             buttonArea = offsetArea;
 
             mBitmap = BitmapFactory.decodeResource(getResources(),randomLetter());
-            Drawable d = getResources().getDrawable(R.drawable.maj_z);
+            Drawable d = getResources().getDrawable(randomLetter());
             d.setBounds(0, 0, 0, 0);
 
         }
@@ -533,14 +533,17 @@ public class Tracelalettre_facile extends AppCompatActivity
                 }
             }
         }
-        if (score<0)
-        {
-            score=0;
+        if (score<0) {
+            score = 0;
         }
 
         if (darkPixels!=0)
         {
             score=score/darkPixels;
+        }
+        else
+        {
+            score=score/200;
         }
 
        // System.out.print("\n"+score+"\n");
@@ -588,6 +591,7 @@ public class Tracelalettre_facile extends AppCompatActivity
                     tableResults[case1][case2] = TRUE;
                 }
             }
+            System.out.println(darkPixels);
         } catch (IOException e) {
 
         } finally {

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://A:\ApprendsAvecMoi\AppAvecMoi.iml" filepath="A:\ApprendsAvecMoi\AppAvecMoi.iml" />
-      <module fileurl="file://C:\Users\Clem\StudioProjects\ApprendsAvecMoi\AppAvecMoi.iml" filepath="C:\Users\Clem\StudioProjects\ApprendsAvecMoi\AppAvecMoi.iml" />
       <module fileurl="file://$PROJECT_DIR$/ApprendsAvecMoi.iml" filepath="$PROJECT_DIR$/ApprendsAvecMoi.iml" />
-      <module fileurl="file://C:\Users\Leo\projetAnnuel\AppAvecMoi\ApprendsAvecMoi.iml" filepath="C:\Users\Leo\projetAnnuel\AppAvecMoi\ApprendsAvecMoi.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
