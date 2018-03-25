@@ -58,8 +58,8 @@ public class Tracelalettre_facile extends AppCompatActivity
     // On prend des tableaux de 100*100 cases pour avoir de la marge.
     // On prend toujours x+10 et y+10 pour ne pas avoir de valeurs negatives
     // dans les tableaux
-    boolean tableResults[][] = new boolean[50][50];
-    boolean tableUser[][] = new boolean[50][50];
+    boolean tableResults[][] = new boolean[100][100];
+    boolean tableUser[][] = new boolean[100][100];
 
 
 
@@ -253,6 +253,14 @@ public class Tracelalettre_facile extends AppCompatActivity
                 if (caseY <=0)
                 {
                     caseY = 0;
+                }
+                if (caseX >99)
+                {
+                    caseX = 99;
+                }
+                if (caseY > 99)
+                {
+                    caseY = 99;
                 }
 
                 tableUser[caseX][caseY]=TRUE;

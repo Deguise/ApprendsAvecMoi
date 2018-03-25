@@ -52,7 +52,7 @@
             android:layout_weight="1"
             android:background="@color/colorText"
             android:fontFamily="@font/rochester"
-            android:text="Choisis ton jeux :"
+            android:text="Choisis ton jeu :"
             android:textSize="30sp" />
 
     </RelativeLayout>

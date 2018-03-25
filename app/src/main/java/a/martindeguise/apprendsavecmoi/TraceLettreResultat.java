@@ -46,7 +46,7 @@ public class TraceLettreResultat extends AppCompatActivity
         } else if (isBetween(score, 400, 450)) {
             textView101.setText("Incroyable !");
         } else if (isBetween(score, 450, 500)) {
-            textView101.setText("Super fort !");
+            textView101.setText("Sensationnel !");
         } else {
             textView101.setText("Tu déchires tout !");
         }

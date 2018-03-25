@@ -94,7 +94,7 @@
             android:layout_weight="1"
             android:background="@color/colorText"
             android:fontFamily="@font/rochester"
-            android:text=" Dans cet exercice, tu va devoir reproduire la lettre affiché à l'écran  en la traçant avec ton doigt sur l'écran. Valide ta réponse en  cliquant sur Valider.                                                                        A toi de jouer !"
+            android:text=" Dans cet exercice, tu va devoir reproduire la lettre affichée à l'écran en la traçant avec ton doigt sur l'écran. Valide ta réponse en  cliquant sur Valider.                                                                        A toi de jouer !"
             android:textSize="30sp" />
 
     </RelativeLayout>

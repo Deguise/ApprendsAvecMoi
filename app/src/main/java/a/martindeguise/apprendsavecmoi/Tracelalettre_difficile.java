@@ -58,8 +58,8 @@ public class Tracelalettre_difficile extends AppCompatActivity
     // On prend des tableaux de 100*100 cases pour avoir de la marge.
     // On prend toujours x+10 et y+10 pour ne pas avoir de valeurs negatives
     // dans les tableaux
-    boolean tableResults[][] = new boolean[50][50];
-    boolean tableUser[][] = new boolean[50][50];
+    boolean tableResults[][] = new boolean[100][100];
+    boolean tableUser[][] = new boolean[100][100];
 
 
 
@@ -85,9 +85,9 @@ public class Tracelalettre_difficile extends AppCompatActivity
 //		Arrays.fill(tableUser, Boolean.FALSE);
 
         // On prend des tableaux de 25*25 cases pour avoir de la marge.
-        for (int i=0; i <25; i++)
+        for (int i=0; i <100; i++)
         {
-            for (int j=0; j<25; j++)
+            for (int j=0; j<100; j++)
             {
                 tableUser[i][j] = FALSE;
                 tableResults[i][j] = FALSE;

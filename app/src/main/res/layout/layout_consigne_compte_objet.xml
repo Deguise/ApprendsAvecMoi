@@ -94,7 +94,7 @@
             android:layout_weight="1"
             android:background="@color/colorText"
             android:fontFamily="@font/rochester"
-            android:text=" Dans cet exercice, comptes le nombre d'objets affichés à l'écran et  écrit le nombre trouvé avec le clavier.
+            android:text=" Dans cet exercice, compte le nombre d'objets affichés à l'écran et  écris le nombre trouvé à l'aide du clavier.
  Clique sur Valider pour confirmer ta réponse.
  A toi de jouer !"
             android:textSize="30sp" />

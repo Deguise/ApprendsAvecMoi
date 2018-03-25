@@ -69,13 +69,13 @@ public class Resultat extends AppCompatActivity{
             //Affichage du message pour savoir si le resultat donnée par l'utilisateur est bon ou pas
             if (resultat.equals(resultatUser)){
                 reussit = "Oui";
-                textView8.setText("Bon");
+                textView8.setText("Bon résultat, bravo !");
             }
             else{
-                textView8.setText("Pas bon");
+                textView8.setText("Mauvais résultat, dommage :-(");
             }
 
-            String content = "Equation: " + equation + "Resultat attendu: " + resultat + "Votre resultat: " + resultatUser + "L'exercice est reussit? " + reussit + "\n";
+            String content = "Equation : " + equation + "Resultat attendu : " + resultat + "Votre resultat : " + resultatUser + "L'exercice est reussi ? " + reussit + "\n";
 
             writeToFile("A:\\ApprendsAvecMoi\\app\\src\\main\\assets\\", "score.txt", content);
         }
