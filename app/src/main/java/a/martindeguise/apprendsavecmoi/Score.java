@@ -85,7 +85,7 @@ public class Score implements Serializable{
 
     @Override
     public String toString() {
-        return "id: " + id + "\nEquation: " + equation + "\nResultat attendu: " + resultat + "\nVotre resultat: " + resultatUser + "L'exercice est reussit? " + reussit;
+        return "ID : " + id + "\nEquation : " + equation + "\nResultat attendu : " + resultat + "\nVotre resultat : " + resultatUser + "L'exercice est reussi ? " + reussit;
     }
 
     public void saveScores(List<Score> score) {

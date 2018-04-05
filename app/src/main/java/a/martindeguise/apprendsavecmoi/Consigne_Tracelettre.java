@@ -28,7 +28,7 @@ public class Consigne_Tracelettre extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Consigne_Tracelettre.this, Tracelalette_facile.class);
+                Intent intent = new Intent(Consigne_Tracelettre.this, Tracelalettre_facile.class);
                 startActivity(intent);
             }
         });

@@ -94,7 +94,7 @@
             android:layout_weight="1"
             android:background="@color/colorText"
             android:fontFamily="@font/rochester"
-            android:text=" Dans cet exercice, écrit le mot que tu entends à l'aide du clavier. Valide ta réponse en cliquant sur Valider.
+            android:text=" Dans cet exercice, écris le mot que tu entends à l'aide du clavier. Valide ta réponse en cliquant sur Valider.
             A toi de jouer !"
             android:textSize="30sp" />
 
